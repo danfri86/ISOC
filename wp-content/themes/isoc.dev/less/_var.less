@@ -1,0 +1,111 @@
+/*----------------------------------------------------------------
+		BREAKPOINTS
+-------------------------------------------------------------- */
+
+@desktop:   ~"only screen and (min-width: 1023px)";
+@tablet: ~"screen and (min-width: 540px) and (max-width: 1023px)";
+@phone:    ~"only screen and (max-width: 540px)";
+
+@container-width: 1020px;
+@container-width-tablet: 700px;
+
+/*----------------------------------------------------------------
+		COLORS
+-------------------------------------------------------------- */
+
+@main: 			lighten(#263e91, 20%);
+@main-dark:   	#263e91;
+
+@navy: 			#001F3F;
+@blue: 			#0074D9;
+@aqua: 			#7FDBFF;
+
+@olive: 		#3D9970;
+@green: 		#2ECC40;
+@lime: 			#01FF70;
+
+@yellow: 		#FFDC00;
+@orange: 		#FF851B;
+@red: 			#FF4136;
+
+@maroon: 		#85144B;
+@purple: 		#B10DC9;
+
+@white: 		#FFFFFF;
+@silver: 		#DDDDDD;
+@gray: 			#AAAAAA;
+@black: 		#333333;
+
+/*----------------------------------------------------------------
+		TYPOGRAPHY
+-------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic);
+
+@base-fontsize: 		16px;
+@base-lineheight: 		1.7;
+
+@selection-color: 		@white;
+@selection-background: 	@main;
+
+@text-color: 			@black;
+
+@linkColor: 			@main;
+@linkHoverColor: 		darken(@linkColor, 15%);
+
+@lato:					'Lato', helvetica, sans-serif;
+@opensans:				'Open Sans', helvetica, sans-serif;
+@georgia:				Georgia, serif;
+@cabin:					'Cabin', sans-serif;
+
+
+/*----------------------------------------------------------------
+		MIXINS
+-------------------------------------------------------------- */
+
+.reset() {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: @base-fontsize;
+}
+
+.vertical-align() {
+ 	position: relative;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	-webkit-transform: translateY(-50%);
+ 	-moz-transform: translateY(-50%);
+ 	-o-transform: translateY(-50%);
+ 	-ms-transform: translateY(-50%);
+}
+
+.border-radius (@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+.opacity (@opacity) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity:		@opacity; 
+}
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}

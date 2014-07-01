@@ -1,0 +1,39 @@
+/* --------------------------------------------------------------
+		1. GRID
+-------------------------------------------------------------- */
+
+.container {
+	max-width: @container-width;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}
+
+	[class*='box-'], .box {
+		float: left;
+		display: inline-block;
+		padding: 20px 5px;
+		position: relative;
+	}
+
+
+.box-12    {width: 100%; }
+.box-11    {width: 91.6%;}
+.box-10    {width: 83.3%;}
+.box-9     {width: 75%;  }
+.box-8     {width: 66.6%;}
+.box-7     {width: 58.3%;}
+.box-6     {width: 50%;  }
+.box-5     {width: 41.6%;}
+.box-4     {width: 33.3%;}
+.box-3     {width: 25%;  }
+.box-2     {width: 16.6%;}
+.box-1     {width: 8.3%; }
+
+

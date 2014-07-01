@@ -1,0 +1,24 @@
+{
+  "name": "BOXcss",
+  "version": "0.1.0",
+  "description": "Simple CSS framework",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-csscomb": "~1.2.1",
+    "load-grunt-tasks": "~0.2.0",
+    "gulp": "~3.5.1"
+  },
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "BOXcss"
+  ],
+  "author": "Alexander Hansson",
+  "license": "ISC"
+}

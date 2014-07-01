@@ -1,0 +1,11 @@
+{
+    "name": "BOXcss",
+    "version": "0.1.0",
+    "dependencies": {
+        "jquery": "latest",
+        "font-awesome": "latest",
+        "animate.css": "latest",
+        "modernizr": "latest",
+        "normalize-css": "latest"
+    }
+}

@@ -1,0 +1,148 @@
+/* --------------------------------------------------------------
+		4. SITE
+			4.1 HEADER
+-------------------------------------------------------------- */
+
+header {
+
+	padding: 30px 0;
+
+	h1.logo {
+		width: 30%;
+		float: left;
+	}
+
+	nav {
+		float: right;
+		width: 70%;
+		padding-top: 58px;
+
+		ul li {
+		  cursor: pointer;
+		  -webkit-transition: all .1s;
+		  -moz-transition: all .1s;
+		  -ms-transition: all .1s;
+		  -o-transition: all .1s;
+		  transition: all .1s;
+		}
+
+		ul li.dropdown:hover {
+			background: @main;
+			color: @white;
+		}
+
+		ul li ul {
+		  padding: 0;
+		  position: absolute;
+		  top: 32px;
+		  left: -5px;
+		  width: 200px;
+		  -webkit-box-shadow: none;
+		  -moz-box-shadow: none;
+		  box-shadow: none;
+		  display: none;
+		  opacity: 0;
+		  visibility: hidden;
+		  -webkit-transiton: opacity .1s;
+		  -moz-transition: opacity .1s;
+		  -ms-transition: opacity .1s;
+		  -o-transition: opacity .1s;
+		  -transition: opacity .1s;
+		}
+
+		ul li ul li { 
+		  background: @main; 
+		  display: block; 
+		  color: #fff;
+		  padding: 10px 15px;
+		  z-index: 999;
+		}
+
+		ul li ul li:hover { background: @main-dark; }
+		
+		ul li:hover ul {
+		  display: block;
+		  opacity: 1;
+		  visibility: visible;
+		}
+
+		ul {
+			display: block;
+			float: right;
+
+
+			li {
+				display: inline-block;
+				margin-left: 5px;
+				padding: 5px 10px;
+				position: relative;	
+
+				font-size: 90%;
+
+
+				i {
+					margin-left: 5px;
+				}
+
+				&.search {
+					i {
+						z-index: 9999;
+						position: absolute;
+						top:-12px;
+						right: 40px;
+					}
+				}
+
+				input {
+					position: absolute;
+					right: 0;
+					top:-25px;
+					z-index: 9;
+					width: 60px;
+					padding: 20px 12px;
+					font-size: 15px;
+					border: 0;
+					.transition(.2s);
+					background: #f5f5f5;
+
+
+
+					&:focus {
+						width: 190px;
+					}
+				}
+			}
+		}
+	}
+
+	.top-menu {
+		position: absolute;
+		top: 25px;
+		right: 20px;
+
+		color: @main-dark;
+
+		ul {
+			display: block;
+			float: right;
+
+			li {
+				display: inline-block;
+				margin-left: 25px;
+
+				font-size: 90%;
+
+				i {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+
+}
+
+/* --------------------------------------------------------------
+			4.2 NAVIGATION
+-------------------------------------------------------------- */
+
+nav[role=navigation] {}

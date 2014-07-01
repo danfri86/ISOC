@@ -1,0 +1,105 @@
+/* --------------------------------------------------------------
+
+	BOXcss v1.1
+
+	TABLE OF CONTENTS
+	------------------
+	0. IMPORTS & VARIABLES
+	1. FIXES
+	2. BASE
+	3. TYPOGRAPHY
+	4. PARTIALS
+	5. GRID
+	6. HELP CLASSES
+	7. MEDIA QUERIES
+
+
+	The MIT License (MIT)
+
+	Copyright (c) 2014 Alexander Hansson
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+
+/* --------------------------------------------------------------
+	0. IMPORT, MIXINS AND VARIABLES
+	   This file contains some useful mixins, font imports
+	   and variables.
+-------------------------------------------------------------- */
+
+	@import "_var.less";
+
+/* --------------------------------------------------------------
+	1. GRID
+-------------------------------------------------------------- */
+	
+	@import "_grid.less";
+
+/* --------------------------------------------------------------
+	2. BASE
+	   Basic styles - links, selection, *-reset.
+-------------------------------------------------------------- */
+
+	@import "_base.less";
+
+/* --------------------------------------------------------------
+	3. TYPOGRAPHY
+	   Headings, and paragraphs. Font-size and line-height adjust 
+	   for opitmal readability. 
+-------------------------------------------------------------- */
+
+	@import "_type.less";
+
+/* --------------------------------------------------------------
+	4. PARTIALS
+	   The styles of your pages will be in these files.
+-------------------------------------------------------------- */
+
+	@import "/partials/_header.less";
+	@import "/partials/_site.less";
+	@import "/partials/_footer.less";
+
+/* --------------------------------------------------------------
+	5. FIXES and print styles
+-------------------------------------------------------------- */
+
+	@import "_fixes.less";
+
+
+/* --------------------------------------------------------------
+	6. HELP CLASSES
+-------------------------------------------------------------- */
+
+	@import "_help--classes.less";
+
+/* --------------------------------------------------------------
+	7. MEDIA QUERIES 
+	Your responsive styles here. If not clear — tablet styles
+	in _tablet.less. Phone styles in _phone.less. The last 
+	file includes other media queries, like 2x.
+-------------------------------------------------------------- */
+	
+	@media @tablet {
+		@import "_tablet.less";
+	}
+
+	@media @phone {
+		@import "_phone.less";
+	}
+		
+	@import "_media--queries.less";
