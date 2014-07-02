@@ -8,4 +8,7 @@ $(document).ready(function() {
 	var body  = $('body');
 	var $self = $(this);
 
-)};
+
+	$("#checkboxForetag").attr("checked") ? alert("Checked") : alert("Unchecked");
+
+});

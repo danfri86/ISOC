@@ -141,6 +141,66 @@ header {
 
 }
 
+@media @phone {
+
+	.top-menu {
+		visibility: hidden;
+	}
+
+	header {
+
+		h1.logo {
+			width: 100%;
+		}
+		
+		nav {
+			width: 100%;
+
+			ul {
+				width:100%;
+
+				li {
+					width:100%;
+					padding: 20px 0;
+					border-bottom: 1px solid #999;					
+
+					&:hover, &.dropdown:hover {
+						background: #f5f5f5;
+						color: black;
+						border-bottom: 1px solid @black;
+					}
+
+					ul {
+		  				width: 100%;
+		  				margin-left: 5px;
+		  				z-index: 9999;
+		  				margin-top: 15px;
+		  				position: static;
+		  				width: 100%;
+						opacity: 1;
+		  				visibility: visible;
+		  				display: block;
+		  				background: #f5f5f5;
+
+						li {
+							display: block;
+							color: @black;
+							margin: 0;
+							border: none;
+							background: #f5f5f5;
+							border-bottom: 1px solid #f5f5f5;
+
+							&:hover {
+								background: #f5f5f5;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 /* --------------------------------------------------------------
 			4.2 NAVIGATION
 -------------------------------------------------------------- */
