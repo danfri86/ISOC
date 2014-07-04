@@ -143,12 +143,6 @@ i {
 		display: block;
 
 		p {
-			span {
-				color: @main;
-				text-transform: uppercase;
-				font-size:.85em;
-				font-weight: bold;
-			}
 		}
 	}
 
@@ -182,16 +176,19 @@ i {
 	}
 }
 
-.genvagar {
-	ul {
-		padding-left:0px;
+.meta {
+	height: 250px;
 
-		li {
-			display: inline-block;
-			width: 33%;
-			float: left;
-		}
+	small {
+		margin-top: -10px;
 	}
+}
+
+span.kategori {
+	color: @main;
+	text-transform: uppercase;
+	font-size:.95em;
+	font-weight: bold;
 }
 
 /* --------------------------------------------------------------
@@ -200,30 +197,39 @@ i {
 
 .page-layout {
 	background: @white;
-}
 
-.page-header {
-	padding: 30px 30px 20px 30px;
-	background: @silver;
-	margin-left: -25px;
-	margin-right: -25px;
-	margin-top: -25px;
-	margin-bottom: 20px;
 
-	h1 {
-		margin-top: 0;
+	.page-header {
+		padding: 30px 30px 20px 30px;
+		background: @silver;
+		margin-left: -25px;
+		margin-right: -25px;
+		margin-top: -25px;
+		margin-bottom: 20px;
+
+		h1 {
+			margin-top: 0;
+		}
 	}
-}
 
-.sidenote {
-	border: 1px solid #999;
-	.border-radius(4px);
-	padding: 20px 20px;
-	margin-top: 20px;
-	float: right;
+	.sidenote {
+		border: 1px solid #999;
+	}
 
-	p {
-		font-size: 90%;
+	.sidenote, .box-3 {
+		.border-radius(4px);
+		padding: 20px 20px;
+		margin-top: 20px;
+		float: right;
+
+		p {
+			font-size: 90%;
+		}
+
+		.btn {
+			width: 100%;
+			text-align: center;
+		}
 	}
 }
 
@@ -270,6 +276,10 @@ i {
 		margin-right: 10px;
 	}
 
+	input[type=submit] {
+		width: auto;
+	}
+
 	small {
 		font-size: 90%;
 	}
@@ -288,6 +298,17 @@ i {
 }
 
 
+/* --------------------------------------------------------------
+			UNDERSIDA — nyhet singel
+-------------------------------------------------------------- */
+
+.nyhet {
+
+	ul {
+		padding-left: 20px;
+		margin-bottom: 1em;
+	}
+}
 
 
 
