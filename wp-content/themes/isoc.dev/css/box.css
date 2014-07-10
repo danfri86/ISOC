@@ -615,6 +615,17 @@ span.kategori {
   width: 100%;
   text-align: center;
 }
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 90%;
+}
+input {
+  border: 1px solid #999;
+  margin-bottom: 12px;
+}
 /* --------------------------------------------------------------
 			UNDERSIDA — bli medlem
 -------------------------------------------------------------- */
@@ -671,6 +682,11 @@ span.kategori {
   margin-top: 20px;
   display: none;
 }
+@media only screen and (max-width: 540px) {
+  .medlem-form .pl {
+    padding-left: 0 !important;
+  }
+}
 /* --------------------------------------------------------------
 			UNDERSIDA — nyhet singel
 -------------------------------------------------------------- */
@@ -685,7 +701,6 @@ footer[role=contentinfo] {
   padding: 80px 0 70px 0;
   background: #4d6ad0;
   color: white;
-  border-top: 10px solid #263e91;
 }
 footer[role=contentinfo] p.copyright {
   display: block;
