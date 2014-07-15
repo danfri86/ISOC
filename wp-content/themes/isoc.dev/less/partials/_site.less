@@ -23,32 +23,6 @@ i {
 
 	height: 400px;
 
-	/*.news-single-front {
-		position: absolute;
-		background: rgba(0, 75, 138, 0.8);
-		padding: 20px;
-
-		height: 288px;
-
-		left: 60px;
-		bottom: 30px;
-
-		width: 400px;
-
-		h1 {
-			font-weight: 900;
-			margin-bottom: 10px;
-		}
-
-		.btn {
-			float: right;
-
-			position: absolute;
-			bottom: 20px;;
-			right: 20px;
-		}
-
-	}*/
 
 	@media @tablet, @phone {
 		img {
@@ -105,8 +79,6 @@ i {
 	background: @white;
 	padding: 40px 30px;
 	overflow: hidden;
-
-	//.border-radius(4px);
 
 	img.network {
 		width: 100%;
@@ -209,6 +181,21 @@ span.kategori {
 
 		h1 {
 			margin-top: 0;
+			display: inline-block;
+			//margin-left: 90px;
+		}
+
+		h3 {
+			font-size: 1em;
+		}
+
+		img {
+			width: 80px;
+			height: auto;
+			display: inline-block;
+			position: absolute;
+			top: 14px;
+			left: 5px;
 		}
 	}
 
@@ -217,7 +204,6 @@ span.kategori {
 	}
 
 	.sidenote, .box-3 {
-		.border-radius(4px);
 		padding: 20px 20px;
 		margin-top: 20px;
 		float: right;
@@ -230,18 +216,63 @@ span.kategori {
 			width: 100%;
 			text-align: center;
 		}
+
+		.bilaga {
+			margin-top: 12px;
+
+			i {
+				margin-right: 5px;
+				margin-left: -5px;
+			}
+		}
 	}
 }
 
 input, textarea, select {
 	width: 100%;
 	padding: 12px 18px;
-	font-size: 90%;
 }
 
 input {
 	border: 1px solid #999;
 	margin-bottom: 12px;
+	padding: 12px 18px;
+}
+
+.breadcrumbs {
+	font-size: 90%;
+	height: 3em;
+	padding: 0 20px;
+	color: @black;
+	line-height: 3em;
+	//border: 1px solid #999;
+	background: @white;
+	//.border-radius(4px);
+	margin: 30px 0 50px 0;
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin-right: 10px;
+		position: relative;
+
+		&:after {
+			margin-left: 10px;
+			content: "\f105";
+			display: inline-block;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		&:last-child {
+			&:after {
+				content: '';
+			}
+		}
+	}
 }
 
 /* --------------------------------------------------------------
@@ -328,5 +359,47 @@ input {
 }
 
 
+/* --------------------------------------------------------------
+			UNDERSIDA — posts
+-------------------------------------------------------------- */
+
+
+.posts {
+
+	input {
+		margin-top: 10px;
+	}
+
+	ul {
+		li {
+			list-style: none;
+			margin-bottom: 30px;
+			border-bottom: 1px solid @silver;
+			padding-bottom: 30px;
+
+			a {
+				color: @black;
+
+				&:hover {
+					h3 {
+						color: @main;
+					}
+				}
+			}
+		}
+
+		&.nyheter-arkiv {
+			li {
+				padding-bottom: 0;
+				margin-bottom: 0;
+				border-bottom: none;
+
+				&:first-child {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
 
 
