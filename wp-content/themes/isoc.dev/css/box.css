@@ -232,7 +232,7 @@ h4 {
   font-size: 1em;
   line-height: 1.7;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
   h1 {
     font-size: 1.4em;
   }
@@ -274,6 +274,19 @@ header nav {
   float: right;
   width: 70%;
   padding-top: 58px;
+}
+@media only screen and (max-width: 640px) {
+  header nav.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #f5f5f5;
+    padding-top: 0;
+  }
+  header nav {
+    display: none;
+  }
 }
 header nav ul li {
   cursor: pointer;
@@ -376,7 +389,7 @@ header .top-menu ul li {
 header .top-menu ul li i {
   margin-left: 5px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
   .top-menu {
     visibility: hidden;
   }
@@ -442,7 +455,7 @@ i {
 .hero .container {
   padding: 0;
 }
-@media screen and (min-width: 540px) and (max-width: 1023px), only screen and (max-width: 540px) {
+@media screen and (min-width: 640px) and (max-width: 1023px), only screen and (max-width: 640px) {
   .hero img {
     display: none;
   }
@@ -452,7 +465,7 @@ i {
   left: 20px;
 }
 .hero .hero-headline h1 {
-  padding-top: 30px;
+  padding-top: 40px;
   line-height: 1.1;
   color: #263e91;
   font-weight: bolder;
@@ -469,17 +482,39 @@ i {
 .hero .hero-headline a.border {
   margin-left: 10px;
 }
-@media screen and (min-width: 540px) and (max-width: 1023px), only screen and (max-width: 540px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .hero .hero-headline p {
+    margin: 20px auto 10px auto;
+    max-width: 70%;
+  }
+  .hero .hero-headline {
+    position: relative;
+    padding: 1px 20px 60px 20px;
+    width: auto;
+    left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 640px) {
   .hero .hero-headline p {
     max-width: 100%;
   }
   .hero .hero-headline {
     position: relative;
+    padding: 20px 20px 80px 20px;
+    width: auto;
+    text-align: center;
+    left: 0;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
   .hero {
     height: auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .om-isoc img {
+    display: none;
   }
 }
 .puff {
@@ -492,6 +527,19 @@ i {
   margin-top: -20px;
   margin-left: -60px;
   margin-bottom: -60px;
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .puff img.network {
+    margin-top: 11px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .puff {
+    height: auto;
+  }
+  .puff .network-img {
+    display: none;
+  }
 }
 /* --------------------------------------------------------------
 			LANDING PAGE
@@ -510,21 +558,50 @@ i {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   padding: 10px;
-  margin-top: -20px;
-  margin-left: -10px;
+  width: 130px;
+  position: absolute;
+  top: 3px;
+  left: 13px;
+}
+@media only screen and (max-width: 640px) {
+  .nyheter .box-3 {
+    display: none;
+  }
 }
 .nyheter .nyhet {
   float: left;
   display: block;
 }
 .nyheter a {
-  display: block;
+  display: none;
   float: left;
+  margin-top: -1em;
 }
 .nyheter a.btn {
   position: absolute;
   right: 0;
   bottom: 30px;
+  display: block;
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .nyheter a.btn {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .nyheter {
+    height: auto;
+  }
+  .nyheter img {
+    display: none;
+  }
+  .nyheter a {
+    float: right;
+  }
+  .nyheter a.btn {
+    bottom: 20px;
+    right: 20px;
+  }
 }
 .arkiv {
   height: 520px;
@@ -541,11 +618,31 @@ i {
   bottom: 30px;
   left: 100px;
 }
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .arkiv {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .arkiv {
+    display: none !important;
+  }
+}
 .meta {
-  height: 250px;
+  height: 270px;
 }
 .meta small {
   margin-top: -10px;
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .meta {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .meta {
+    height: auto;
+  }
 }
 span.kategori {
   color: #4d6ad0;
@@ -704,7 +801,7 @@ input {
   margin-top: 20px;
   display: none;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
   .medlem-form .pl {
     padding-left: 0 !important;
   }
@@ -942,24 +1039,22 @@ embed {
   display: block;
   float: none;
 }
-/* You might wanna change this */
-@media only screen and (max-width: 540px) {
-  [class*='mb'] {
-    margin-bottom: 0;
-  }
-  [class*='mt'] {
-    margin-top: 0;
-  }
-  [class*='pb'] {
-    padding-bottom: 0;
-  }
-  [class*='pt'] {
-    padding-top: 0;
-  }
-  .pl {
-    padding-left: 0;
-  }
-}
+/* You might wanna change this 
+@media @phone {
+	[class*='mb'] {
+		margin-bottom: 0;
+	}
+	[class*='mt'] {
+		margin-top: 0;
+	}
+	[class*='pb'] {
+		padding-bottom: 0;
+	}
+	[class*='pt'] {
+		padding-top: 0;
+	}
+	.pl {padding-left: 0;}
+}*/
 .btn,
 button {
   display: inline-block;
@@ -1007,12 +1102,12 @@ button:hover {
 	in _tablet.less. Phone styles in _phone.less. The last 
 	file includes other media queries, like 2x.
 -------------------------------------------------------------- */
-@media screen and (min-width: 540px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   /* --------------------------------------------------------------
 		TABLET STYLES
 -------------------------------------------------------------- */
   .container {
-    max-width: 700px;
+    max-width: 860px;
   }
   .tablet-12 {
     width: 100%;
@@ -1054,7 +1149,7 @@ button:hover {
     display: none;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
   /* --------------------------------------------------------------
 		PHONE STYLES
 -------------------------------------------------------------- */

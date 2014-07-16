@@ -35,7 +35,7 @@ i {
 		left: 20px;
 
 		h1 {
-			padding-top: 30px;
+			padding-top: 40px;
 			line-height: 1.1;
 			color: @main-dark;
 			font-weight: bolder;
@@ -56,13 +56,32 @@ i {
 			margin-left: 10px;
 		}
 
-		@media @tablet, @phone { 
+		@media @tablet { 
+			p {
+				margin: 20px auto 10px auto;
+				max-width: 70%;
+			}
+
+			& {
+				position: relative;
+				padding: 1px 20px 60px 20px;
+				width: auto;
+				left: 0;
+				text-align: center;
+			}
+		}
+
+		@media @phone { 
 			p {
 				max-width: 100%;
 			}
 
 			& {
 				position: relative;
+				padding: 20px 20px 80px 20px;
+				width: auto;
+				text-align: center;
+				left: 0;
 			}
 		}
 	}
@@ -75,6 +94,17 @@ i {
 
 }
 
+.om-isoc {
+
+	@media @phone {
+		& {
+			img {
+				display: none;
+			}
+		}
+	}
+}
+
 .puff {
 	background: @white;
 	padding: 40px 30px;
@@ -85,6 +115,23 @@ i {
 		margin-top: -20px;
 		margin-left: -60px;
 		margin-bottom: -60px;
+
+		@media @tablet {
+			& {
+				margin-top: 11px;
+			}
+		}
+	}
+
+
+	@media @phone {
+		& {
+			height: auto;
+		}
+
+		.network-img {
+			display: none;
+		}
 	}
 }
 
@@ -105,8 +152,14 @@ i {
 		img {
 			.border-radius(100%);
 			padding: 10px;
-			margin-top: -20px;
-			margin-left: -10px;
+			width: 130px;
+			position: absolute;
+			top: 3px;
+			left: 13px;
+		}
+
+		@media @phone {
+			display:none;
 		}
 	}
 
@@ -119,13 +172,41 @@ i {
 	}
 
 	a {
-		display: block;
+		display: none;
 		float: left;
+		margin-top: -1em;
 
 		&.btn {
 			position: absolute;
 			right: 0;
 			bottom: 30px;
+			display: block;
+		}
+	}
+
+	@media @tablet {
+		a.btn {
+			right: 20px;
+		}
+	}
+
+
+	@media @phone {
+		& {
+			height: auto;
+
+			img {
+				display: none;
+			}
+
+			a {
+				float: right;
+			}
+
+			a.btn {
+				bottom:20px;
+				right: 20px;
+			}
 		}
 	}
 }
@@ -146,13 +227,38 @@ i {
 			}
 		}
 	}
+
+	@media @tablet {
+		& {
+			display: none;
+		}
+	}
+
+	@media @phone {
+		& {
+			display: none !important;
+		}
+	}
 }
 
 .meta {
-	height: 250px;
+	height: 270px;
 
 	small {
 		margin-top: -10px;
+	}
+
+	@media @tablet {
+		& {
+			height: 300px;
+		}
+	}
+
+
+	@media @phone {
+		& {
+			height: auto;
+		}
 	}
 }
 
@@ -182,7 +288,6 @@ span.kategori {
 		h1 {
 			margin-top: 0;
 			display: inline-block;
-			//margin-left: 90px;
 		}
 
 		h3 {
