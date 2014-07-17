@@ -295,7 +295,7 @@ header span.mobile-close {
     display: block;
     position: absolute;
     right: 20px;
-    top: 38px;
+    top: 10px;
   }
 }
 header nav {
