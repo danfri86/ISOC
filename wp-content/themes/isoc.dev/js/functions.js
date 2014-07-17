@@ -44,4 +44,9 @@ $(document).ready(function() {
 	$('.mobile-close').on('click', function(){
 		$('nav').removeClass('nav-open');
 	});
+
+	// Toggla sökfält på framsidan
+	$('.search-toggle').on('click', function() {
+		$('#search').slideToggle();
+	});
 });

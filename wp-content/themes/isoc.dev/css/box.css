@@ -270,6 +270,12 @@ header h1.logo {
   width: 30%;
   float: left;
 }
+header input {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 999999;
+}
 header span.mobile-menu {
   display: none;
 }
@@ -324,6 +330,14 @@ header nav ul li {
   -ms-transition: all .1s;
   -o-transition: all .1s;
   transition: all .1s;
+}
+header nav ul li:last-child {
+  padding-right: 0;
+}
+@media only screen and (max-width: 640px) {
+  header nav ul li:last-child {
+    display: none;
+  }
 }
 header nav ul li a {
   color: #333333;
@@ -579,6 +593,14 @@ i {
   padding: 40px 30px;
   overflow: hidden;
 }
+@media only screen and (max-width: 640px) {
+  .puff {
+    padding: 40px 20px;
+  }
+  .puff .box-9 {
+    padding: 20px 0;
+  }
+}
 .puff img.network {
   width: 100%;
   margin-top: -20px;
@@ -664,9 +686,10 @@ i {
     float: right;
   }
   .nyheter a.btn {
-    bottom: 20px;
-    right: 20px;
+    position: relative;
     color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: -20px;
   }
 }
 .arkiv {

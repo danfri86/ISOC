@@ -12,6 +12,19 @@ header {
 		float: left;
 	}
 
+	input {
+		position: absolute;
+		top: 0;
+		display: none;
+		z-index: 999999;
+
+		@media @phone {
+			& {
+
+			}
+		}
+	}
+
 	span.mobile-menu {
 		display: none;
 
@@ -75,6 +88,16 @@ header {
 		  -ms-transition: all .1s;
 		  -o-transition: all .1s;
 		  transition: all .1s;
+
+		  &:last-child {
+		  	padding-right:0;
+
+		  	@media @phone {
+		  		& {
+		  			display: none;
+		  		}
+		  	}
+		  }
 
 		  a {
 		  	color: @black;
