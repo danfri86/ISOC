@@ -33,4 +33,15 @@ $(document).ready(function() {
 		alert("wop!");
 		event.preventDefault();
 	});
+
+
+	// Öpnna mobilmeny 
+	$('.mobile-menu').on('click', function(){
+		$('nav').toggleClass('nav-open');
+	});
+
+	// Stänga mobilmeny
+	$('.mobile-close').on('click', function(){
+		$('nav').removeClass('nav-open');
+	});
 });

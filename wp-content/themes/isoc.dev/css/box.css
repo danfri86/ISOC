@@ -270,19 +270,48 @@ header h1.logo {
   width: 30%;
   float: left;
 }
+header span.mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  header span.mobile-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+  }
+}
+header span.mobile-close {
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  header span.mobile-close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 38px;
+  }
+}
 header nav {
   float: right;
   width: 70%;
   padding-top: 58px;
 }
 @media only screen and (max-width: 640px) {
-  header nav.open {
-    position: fixed;
+  header nav.nav-open {
+    display: block;
+    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 999;
     background: #f5f5f5;
-    padding-top: 0;
+    height: 1800px;
+    padding: 50px 30px 0 20px;
+  }
+  header nav.nav-open ul li ul li a {
+    color: #333333 !important;
   }
   header nav {
     display: none;
@@ -295,6 +324,9 @@ header nav ul li {
   -ms-transition: all .1s;
   -o-transition: all .1s;
   transition: all .1s;
+}
+header nav ul li a {
+  color: #333333;
 }
 header nav ul li.dropdown:hover {
   background: #4d6ad0;
@@ -325,8 +357,14 @@ header nav ul li ul li {
   padding: 10px 15px;
   z-index: 999;
 }
+header nav ul li ul li a {
+  color: #ffffff;
+}
 header nav ul li ul li:hover {
   background: #263e91;
+}
+header nav ul li ul li:hover a {
+  color: #ffffff;
 }
 header nav ul li:hover ul {
   display: block;
@@ -393,8 +431,11 @@ header .top-menu ul li i {
   .top-menu {
     visibility: hidden;
   }
+  header {
+    padding: 13px 0 3px 0;
+  }
   header h1.logo {
-    width: 100%;
+    width: 100px;
   }
   header nav {
     width: 100%;
@@ -444,6 +485,11 @@ header .top-menu ul li i {
 /* --------------------------------------------------------------
 			4.3 CONTENT
 -------------------------------------------------------------- */
+@media only screen and (max-width: 640px) {
+  .index {
+    padding: 0;
+  }
+}
 i {
   margin-left: 5px;
 }
@@ -479,8 +525,19 @@ i {
   margin-top: 10px;
   margin-right: 10px;
 }
+@media only screen and (max-width: 640px) {
+  .hero .hero-headline a.btn {
+    color: #ffffff;
+  }
+}
 .hero .hero-headline a.border {
   margin-left: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .hero .hero-headline a.border {
+    color: #333333;
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
   .hero .hero-headline p {
@@ -501,9 +558,9 @@ i {
   }
   .hero .hero-headline {
     position: relative;
-    padding: 20px 20px 80px 20px;
+    padding: 0px 20px 60px 20px;
     width: auto;
-    text-align: center;
+    text-align: left;
     left: 0;
   }
 }
@@ -560,7 +617,7 @@ i {
   padding: 10px;
   width: 130px;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 13px;
 }
 @media only screen and (max-width: 640px) {
@@ -572,16 +629,24 @@ i {
   float: left;
   display: block;
 }
-.nyheter a {
-  display: none;
-  float: left;
-  margin-top: -1em;
+.nyheter .nyhet p {
+  color: #333333;
+}
+.nyheter .nyhet h3 {
+  color: #333333;
+}
+.nyheter a:hover h3 {
+  color: #263e91;
+}
+.nyheter a:hover span {
+  color: #263e91;
 }
 .nyheter a.btn {
   position: absolute;
   right: 0;
   bottom: 30px;
   display: block;
+  color: #ffffff;
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
   .nyheter a.btn {
@@ -601,6 +666,7 @@ i {
   .nyheter a.btn {
     bottom: 20px;
     right: 20px;
+    color: #ffffff;
   }
 }
 .arkiv {
@@ -671,6 +737,11 @@ span.kategori {
 .page-layout .page-header h3 {
   font-size: 1em;
 }
+@media only screen and (max-width: 640px) {
+  .page-layout .page-header h3 {
+    font-size: .9em;
+  }
+}
 .page-layout .page-header img {
   width: 80px;
   height: auto;
@@ -700,6 +771,7 @@ span.kategori {
 .page-layout .sidenote .bilaga,
 .page-layout .box-3 .bilaga {
   margin-top: 12px;
+  color: #ffffff !important;
 }
 .page-layout .sidenote .bilaga i,
 .page-layout .box-3 .bilaga i {
@@ -744,6 +816,11 @@ input {
 }
 .breadcrumbs li:last-child:after {
   content: '';
+}
+@media only screen and (max-width: 640px) {
+  .breadcrumbs {
+    display: none;
+  }
 }
 /* --------------------------------------------------------------
 			UNDERSIDA — bli medlem
@@ -809,6 +886,9 @@ input {
 /* --------------------------------------------------------------
 			UNDERSIDA — nyhet singel
 -------------------------------------------------------------- */
+.nyhet p:first-child {
+  font-weight: bold;
+}
 .nyhet ul {
   padding-left: 20px;
   margin-bottom: 1em;
@@ -1079,6 +1159,12 @@ button {
 button:hover {
   color: #ffffff;
   background: #263e91;
+}
+@media only screen and (max-width: 640px) {
+  .btn,
+  button {
+    color: #ffffff;
+  }
 }
 .blue {
   background: #4d6ad0;
