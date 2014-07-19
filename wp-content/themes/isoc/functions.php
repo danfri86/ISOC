@@ -1,6 +1,8 @@
 <?php
 
 //require_once('custom-post-types/index.php');
+require_once('theme-options/index.php');
+require_once('meta-boxar/index.php');
 
 
 
@@ -69,7 +71,13 @@ function isoc_styles_scripts() {
 
 	wp_enqueue_style( 'isoc_style', get_bloginfo('template_directory') .'/css/style.css', false, false );
 
-	wp_enqueue_script( 'isoc_script', get_bloginfo('template_directory') .'/javascript/index-min.js', array('jquery'), false );
+  wp_enqueue_style( 'isoc_animate', get_bloginfo('template_directory') .'/libs/animate.css/animate.min.css', false, false );
+  wp_enqueue_style( 'isoc_fontIcons', get_bloginfo('template_directory') .'/libs/font-awesome/css/font-awesome.min.css', false, false );
+  wp_enqueue_style( 'isoc_normalize', get_bloginfo('template_directory') .'/libs/normalize-css/normalize.css', false, false );
+
+	wp_enqueue_script( 'modernizr', get_bloginfo('template_directory') .'/libs/modernizr/modernizr.js', array('jquery'), false );
+
+  wp_enqueue_script( 'isoc_script', get_bloginfo('template_directory') .'/js/functions.min.js', array('jquery'), false );
 }
 
 // Hook into the 'wp_enqueue_scripts' action
@@ -97,6 +105,69 @@ function isoc_sidebars() {
 add_action( 'widgets_init', 'isoc_sidebars' );
 
 
+
+
+
+
+
+
+// Lägg till en sökikon sist i menyn
+add_filter( 'wp_nav_menu_items', 'isoc_nav_items', 10, 2 );
+
+function isoc_nav_items($items, $args) {
+  // Lägg till i header menyn
+  if ($args->theme_location == 'main_nav') { 
+    $items .= '
+    <li class="search-toggle">
+      <i class="fa fa-search"></i>
+    </li>
+    ';
+  }
+
+  return $items;
+}
+
+
+
+
+
+// Ändra antal ord på excerpt
+function isoc_excerpt_length( $length ) {
+      return 15;
+}
+add_filter( 'excerpt_length', 'isoc_excerpt_length', 999 );
+
+// Ändra avslutet på excerpt
+function isoc_excerpt_more($more) {
+  return '...';
+}
+
+add_filter('excerpt_more', 'isoc_excerpt_more');
+
+
+
+
+
+
+
+// Ta bort meta-boxar från "Skapa ny" sidorna". Dessa används inte i temat
+function isoc_remove_meta_boxes() {
+  remove_meta_box( 'commentstatusdiv' , 'post' , 'normal' );
+  remove_meta_box( 'commentsdiv' , 'post' , 'normal' );
+  remove_meta_box( 'authordiv' , 'post' , 'normal' );
+  remove_meta_box( 'tagsdiv-post_tag', 'post', 'side');
+  remove_meta_box( 'revisionsdiv', 'post', 'normal');
+  remove_meta_box( 'trackbacksdiv', 'post', 'normal');
+  remove_meta_box( 'slugdiv', 'post', 'normal');
+  remove_meta_box( 'postcustom', 'post', 'normal');
+
+  remove_meta_box( 'commentstatusdiv' , 'page' , 'normal' );
+  remove_meta_box( 'authordiv' , 'page' , 'normal' );
+  remove_meta_box( 'slugdiv', 'page', 'normal');
+  remove_meta_box( 'postcustom', 'page', 'normal');
+}
+
+add_action( 'admin_menu' , 'isoc_remove_meta_boxes' );
 
 
 
@@ -131,12 +202,12 @@ Används såhär:
 Granska sidkoden för att sätta style med css
 */
 function pagination($next = '«', $prev = '»') {
-    global $wp_query, $wp_rewrite;
-    $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+    global $nyhetsArkiv, $wp_rewrite;
+    $nyhetsArkiv->query_vars['paged'] > 1 ? $current = $nyhetsArkiv->query_vars['paged'] : $current = 1;
     $pagination = array(
         'base' => @add_query_arg('paged','%#%'),
         'format' => '',
-        'total' => $wp_query->max_num_pages,
+        'total' => $nyhetsArkiv->max_num_pages,
         'current' => $current,
         'prev_text' => __($prev),
         'next_text' => __($next),
@@ -145,7 +216,7 @@ function pagination($next = '«', $prev = '»') {
     if( $wp_rewrite->using_permalinks() )
         $pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
 
-    if( !empty($wp_query->query_vars['s']) )
+    if( !empty($nyhetsArkiv->query_vars['s']) )
         $pagination['add_args'] = array( 's' => get_query_var( 's' ) );
 
     echo paginate_links( $pagination );

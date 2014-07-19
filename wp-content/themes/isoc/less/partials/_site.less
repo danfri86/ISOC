@@ -1,0 +1,566 @@
+/* --------------------------------------------------------------
+			4.3 CONTENT
+-------------------------------------------------------------- */
+
+.container[role=main] {}
+
+@media @phone {
+	.index {
+		padding: 0;
+	}
+}
+
+i {
+	margin-left: 5px;
+}
+
+
+.hero {
+	color: @main;
+	background: @white;
+
+	.container {
+		padding: 0;
+	}
+
+	height: 400px;
+
+
+	@media @tablet, @phone {
+		img {
+			display: none;
+		}
+	}
+
+	.hero-headline {
+		position: absolute;
+		left: 20px;
+
+		h1 {
+			padding-top: 40px;
+			line-height: 1.1;
+			color: @main-dark;
+			font-weight: bolder;
+		}
+
+		p {
+			color: @black;
+			max-width: 50%;
+		}
+
+		a.btn {
+			margin-left: 0;
+			margin-top: 10px;
+			margin-right: 10px;
+
+			@media @phone {
+				& {
+					color: @white;
+				}
+			}
+		}
+
+		a.border {
+			margin-left: 10px;
+
+			@media @phone {
+				& {
+					color: @black;
+					margin-left: 0;
+				}
+			}
+		}
+
+		@media @tablet { 
+			p {
+				margin: 20px auto 10px auto;
+				max-width: 70%;
+			}
+
+			& {
+				position: relative;
+				padding: 1px 20px 60px 20px;
+				width: auto;
+				left: 0;
+				text-align: center;
+			}
+		}
+
+		@media @phone { 
+			p {
+				max-width: 100%;
+			}
+
+			& {
+				position: relative;
+				padding: 0px 20px 60px 20px;
+				width: auto;
+				text-align: left;
+				left: 0;
+			}
+		}
+	}
+		
+		@media @phone {
+			& {
+				height: auto;
+			}
+		}
+
+}
+
+.om-isoc {
+
+	@media @phone {
+		& {
+			img {
+				display: none;
+			}
+		}
+	}
+}
+
+.puff {
+	background: @white;
+	padding: 40px 30px;
+	overflow: hidden;
+
+	@media @phone {
+		& {
+			padding: 40px 20px;
+
+			.box-9 {
+				padding: 20px 0;
+			}
+		}
+	}
+
+	img.network {
+		width: 100%;
+		margin-top: -20px;
+		margin-left: -60px;
+		margin-bottom: -60px;
+
+		@media @tablet {
+			& {
+				margin-top: 11px;
+			}
+		}
+	}
+
+
+	@media @phone {
+		& {
+			height: auto;
+		}
+
+		.network-img {
+			display: none;
+		}
+	}
+}
+
+/* --------------------------------------------------------------
+			LANDING PAGE
+-------------------------------------------------------------- */
+
+
+.nyheter {
+	height: 520px;
+	p {
+		i {
+			font-size: 70%;
+		}
+	}
+
+	.box-3 {
+		img {
+			.border-radius(100%);
+			padding: 10px;
+			width: 130px;
+			position: absolute;
+			top: 2px;
+			left: 13px;
+		}
+
+		@media @phone {
+			display:none;
+		}
+	}
+
+	.nyhet {
+		float: left;
+		display: block;
+
+		p {
+			color: @black;
+		}
+
+		h3 {
+			color: @black;
+		}
+	}
+
+	a {
+
+		&:hover {
+			h3 {
+				color: @main-dark;
+			}
+
+			span {
+				color: @main-dark;
+			}
+		}
+
+		&.btn {
+			position: absolute;
+			right: 0;
+			bottom: 30px;
+			display: block;
+			color: @white;
+		}
+	}
+
+	@media @tablet {
+		a.btn {
+			right: 20px;
+		}
+	}
+
+
+	@media @phone {
+		& {
+			height: auto;
+
+			img {
+				display: none;
+			}
+
+			a {
+				float: right;
+			}
+
+			a.btn {
+				position: relative;
+				color: @white;
+				margin-top: 30px;
+				margin-bottom: -20px;
+			}
+		}
+	}
+}
+
+.arkiv {
+	height: 520px;
+	position: relative;
+	ul {
+		padding-left: 5px;
+
+		li {
+			list-style: none;
+
+			&:last-child {
+				position:absolute;
+				bottom: 30px;
+				left: 100px;
+			}
+		}
+	}
+
+	@media @tablet {
+		& {
+			display: none;
+		}
+	}
+
+	@media @phone {
+		& {
+			display: none !important;
+		}
+	}
+}
+
+.meta {
+	height: 270px;
+
+	small {
+		margin-top: -10px;
+	}
+
+	@media @tablet {
+		& {
+			height: 300px;
+		}
+	}
+
+
+	@media @phone {
+		& {
+			height: auto;
+		}
+	}
+}
+
+span.kategori {
+	color: @main;
+	text-transform: uppercase;
+	font-size:.95em;
+	font-weight: bold;
+}
+
+/* --------------------------------------------------------------
+			UNDERSIDOR GRUND
+-------------------------------------------------------------- */
+
+.page-layout {
+	background: @white;
+
+
+	.page-header {
+		padding: 30px 30px 20px 30px;
+		background: @silver;
+		margin-left: -25px;
+		margin-right: -25px;
+		margin-top: -25px;
+		margin-bottom: 20px;
+
+		h1 {
+			margin-top: 0;
+			display: inline-block;
+		}
+
+		h3 {
+			font-size: 1em;
+
+			@media @phone {
+				& {
+					font-size: .9em;
+				}
+			}
+		}
+
+		img {
+			width: 80px;
+			height: auto;
+			display: inline-block;
+			position: absolute;
+			top: 14px;
+			left: 5px;
+		}
+	}
+
+	.sidenote {
+		border: 1px solid #999;
+	}
+
+	.sidenote, .box-3 {
+		padding: 20px 20px;
+		margin-top: 20px;
+		float: right;
+
+		p {
+			font-size: 90%;
+		}
+
+		.btn {
+			width: 100%;
+			text-align: center;
+		}
+
+		.bilaga {
+			margin-top: 12px;
+
+			color: @white !important;
+
+			i {
+				margin-right: 5px;
+				margin-left: -5px;
+			}
+		}
+	}
+}
+
+input, textarea, select {
+	width: 100%;
+	padding: 12px 18px;
+}
+
+input {
+	border: 1px solid #999;
+	margin-bottom: 12px;
+	padding: 12px 18px;
+}
+
+.breadcrumbs {
+	font-size: 90%;
+	height: 3em;
+	padding: 0 20px;
+	color: @black;
+	line-height: 3em;
+	background: @white;
+	margin: 30px 0 50px 0;
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin-right: 10px;
+		position: relative;
+
+		&:after {
+			margin-left: 10px;
+			content: "\f105";
+			display: inline-block;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		&:last-child {
+			&:after {
+				content: '';
+			}
+		}
+	}
+
+	@media @phone {
+		& {
+			display: none;
+		}
+	}
+}
+
+/* --------------------------------------------------------------
+			UNDERSIDA — bli medlem
+-------------------------------------------------------------- */
+
+.medlem-form {
+
+	form {
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+
+	textarea {
+	    resize: none;
+	}
+
+	input, textarea, select {
+		width: 100%;
+		padding: 12px 18px;
+		font-size: 90%;
+	}
+
+	input {
+		border: 1px solid #999;
+		margin-bottom: 12px;
+	}
+
+	select {
+		border: 1px solid #999;
+		background: white;
+		margin: 10px 0;
+		color: #999;
+		.border-radius(0px);
+		outline: none;
+		-webkit-appearance: none;
+		font-family: FontAwesome;
+	}
+
+	input[type=checkbox] {
+		width: auto;
+		margin-right: 10px;
+	}
+
+	input[type=submit] {
+		width: auto;
+	}
+
+	small {
+		font-size: 90%;
+	}
+
+	.btn {
+		float: right;
+		margin-top: 5px;
+	}
+
+	.medlem-foretag {
+		float: left;
+		margin-top: 20px;
+
+		display: none;
+	}
+
+		@media @phone {
+			.pl {
+				padding-left: 0 !important;
+			}
+		}
+}
+
+
+/* --------------------------------------------------------------
+			UNDERSIDA — nyhet singel
+-------------------------------------------------------------- */
+
+.nyhet {
+
+	p:first-child {
+		font-weight: bold;
+	}
+
+	ul {
+		padding-left: 20px;
+		margin-bottom: 1em;
+	}
+}
+
+
+/* --------------------------------------------------------------
+			UNDERSIDA — posts
+-------------------------------------------------------------- */
+
+
+.posts {
+
+	input {
+		margin-top: 10px;
+	}
+
+	ul {
+		li {
+			list-style: none;
+			margin-bottom: 30px;
+			border-bottom: 1px solid @silver;
+			padding-bottom: 30px;
+
+			a {
+				color: @black;
+
+				&:hover {
+					h3 {
+						color: @main;
+					}
+				}
+			}
+		}
+
+		&.nyheter-arkiv {
+			li {
+				padding-bottom: 0;
+				margin-bottom: 0;
+				border-bottom: none;
+
+				&:first-child {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+
+

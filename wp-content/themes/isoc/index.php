@@ -1,107 +1,96 @@
-<?php get_header(); ?>
+<?php get_header();
 
-<div class="puffar-start">
-  <article>
-    <div>
-      <a href="#">
-        <div class="bild"></div>
-        <h3>Rubrik</h3>
-        <p>Här kommer lite text</p>
-      </a>
+$options = get_option('isoc_options');
+?>
+  
+<div class="hero">
+  <div class="container">
+
+    <div class="hero-headline tablet-12">
+      <h1><?php echo $options['banner_rubrik']; ?></h1>
+      <?php echo apply_filters('the_content', $options['banner_text']); ?>
+
+      <p><a class="btn blue" href="<?php bloginfo('url'); ?>/bli-medlem">Bli medlem</a> eller <a href="<?php bloginfo('url'); ?>/om" class="btn border">läs mer om ISOC-SE</a></p>
     </div>
-  </article>
 
-  <article>
-    <div>
-      <a href="#">
-        <div class="bild"></div>
-        <h3>Rubrik</h3>
-        <p>Här kommer lite text</p>
-      </a>
-    </div>
-  </article>
-
-  <article>
-    <div>
-      <a href="#">
-        <div class="bild"></div>
-        <h3>Rubrik</h3>
-        <p>Här kommer lite text</p>
-      </a>
-    </div>
-  </article>
-
-  <article>
-    <div>
-      <a href="#">
-        <div class="bild"></div>
-        <h3>Rubrik</h3>
-        <p>Här kommer lite text</p>
-      </a>
-    </div>
-  </article>
-</div>
-
-<div class="row">
-  <div class="valkommen">
-    <div>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo nisl, hendrerit vel egestas in, aliquet eu turpis. Nulla sed porttitor sem, nec lacinia odio. Ut vitae justo faucibus, mattis dui id, eleifend nulla. Quisque ac massa vitae est iaculis auctor. Sed rhoncus, sapien porta eleifend ullamcorper, sem diam rhoncus ante, sit amet cursus ipsum urna vel sem. Donec facilisis diam eget magna blandit, in euismod nunc feugiat. In rutrum, mauris et condimentum venenatis, justo ligula venenatis lorem, ac sagittis augue ligula sed tortor.
-      </p>
+    <div class="tablet-12">
+      <img src="<?php bloginfo('template_directory'); ?>/static/hero-bg.png" alt="">
     </div>
   </div>
 
-  <div class="snabblankar-start">
-    <div>
-      <ul>
-        <li><a href="#">Katalog bestellen</a></li>
-        <li><a href="#">Anfragen senden</a></li>
-        <li><a href="#">Länk</a></li>
-        <li><a href="#">Länk</a></li>
-        <li><a href="#">Länk</a></li>
-        <li><a href="#">Länk</a></li>
-      </ul>
-    </div>
-  </div>
 </div>
 
-<div class="nyheter-front">
-  <h5>Neuigkeiten</h5>
+<div class="container mt50 mb100 index" role="main">
+  <div class="box-9 puff mt20 nyheter tablet-12">
+    <h3 class="uppercase">Nyheter</h3>
 
-  <div>
     <?php
     // WP_Query arguments
     $args = array (
       'post_type'   => 'post',
       'pagination'  => false,
-      'showposts'   => 4,
+      'showposts'   => 2,
     );
 
     // The Query
-    $neuigketen = new WP_Query( $args );
+    $nyheter = new WP_Query( $args );
 
     // The Loop
-    if ( $neuigketen->have_posts() ) {
-      while ( $neuigketen->have_posts() ) {
-        $neuigketen->the_post(); ?>
-          
-          <article>
-            <a href="<?php the_permalink(); ?>">
-              <h4>
-                <?php
-                // Begränsa längden på rubriken till att sträcka sig det som motsvarar max 2 rader
-                if( strlen(get_the_title()) > 40)
-                  echo substr(get_the_title(), 0, 40) .'...';
-                else
-                  echo get_the_title();
-                ?>
-              </h4>
+    if ( $nyheter->have_posts() ) {
+      while ( $nyheter->have_posts() ) {
+        $nyheter->the_post(); ?>
 
-              <p class="small"><?php the_time( get_option( 'date_format' ) ); ?></p>
-            </a>
-          </article>
+          <div class="nyhet">
 
-      <?php }
+            <?php
+            // Om det finns en utvald bild
+            if ( has_post_thumbnail() ) {
+              echo '<div class="box-3">';
+                the_post_thumbnail('thumbnail');
+              echo '</div>';
+
+              // Början på titel+text
+              echo '<div class="box-9">';
+            } else {
+              // Om det inte finns en utvald bild så hämtas artikelns första bild
+              $args = array(
+                 'post_type' => 'attachment',
+                 'numberposts' => 1,
+                 'post_status' => null,
+                 'post_parent' => $post->ID
+              );
+
+              $attachments = get_posts( $args );
+              if ( $attachments ) {
+                echo '<div class="box-3">';
+                  foreach ( $attachments as $attachment ) {
+                    echo wp_get_attachment_image( $attachment->ID, 'thumbnail', false );
+                  }
+                echo '</div>';
+
+                // Början på titel+text
+              echo '<div class="box-9">';
+              } else {
+                echo '<div class="box-12">';
+              }
+            }
+            ?>
+            
+              <a href="<?php the_permalink(); ?>">
+                <h3><?php the_title(); ?></h3>
+                <p>
+                  <span class="kategori">
+                    <?php foreach((get_the_category()) as $category) {
+                      echo $category->category_nicename . ' ';
+                    } ?>
+                  </span>
+                  <?php echo get_the_excerpt(); ?>
+                </p>
+              </a>
+            </div>
+
+          </div>
+        <?php }
     } else {
       // no posts found
     }
@@ -109,12 +98,70 @@
     // Restore original Post Data
     wp_reset_postdata();
     ?>
+
+    <a href="<?php bloginfo('url'); ?>/nyheter" class="btn blue">Fler nyheter</a>
+
   </div>
 
-  <a class="btn btn-primary" href="<?php bloginfo('url'); ?>/neuigkeiten">Weitere Neuigkeiten</a>
+  <div class="box-3 puff mt20 arkiv tablet-12">
+    <h3 class="uppercase">arkivet</h3>
+
+    <ul>
+      <li>Oktober 2014</li>
+      <li>Juli 2014</li>
+      <li>Juni 2014</li>
+      <li>Augusti 2014</li>
+      <li>April 2014</li>
+      <li>Maj 2014</li>
+      <li>Juni 2014</li>
+      <li>Januari 2014</li>
+      <li>Juni 2014</li>
+
+      <li><a href="!#" class="btn blue">Äldre inlägg</a></li>
+    </ul>
+  </div>
+
+  <div class="box-12 puff mt50 om-isoc">
+    <div class="box-6 network-img">
+        <img class="network" src="<?php bloginfo('template_directory'); ?>/static/infra.png" alt="">
+    </div>
+
+    <div class="box-6">
+      <h3>Vad är ISOC-SE?</h3>
+
+      <?php echo apply_filters('the_content', $options['framsida_info']); ?>
+    </div>
+  </div>
+
+  <div class="box-6 puff mt50 meta">
+    <h3 class="uppercase">Nästkommande event</h3>
+    
+    <div class="box-12 np">
+      <p>Inga event är planerade för tillfället</p>
+    </div>
+    <?php /*
+    <div class="box-6 np">
+      <h4><a href="!#">APrIGF 2014</a></h4>
+      <small>3 Aug to 6 Aug, 2014</small>
+      <p>Delhi, India</p>
+    </div>
+   
+    <div class="box-6 np">
+      <h4><a href="!#">APrIGF 2014</a></h4>
+      <small>3 Aug to 6 Aug, 2014</small>
+      <p>Delhi, India</p>
+    </div>
+    */ ?>
+  </div>
+
+  <div class="box-6 puff mt50 meta">
+    <h3 class="uppercase">Bli medlem</h3>
+    <?php echo apply_filters('the_content', $options['banner_text']); ?>
+    <p>Läs mer om <a href="<?php bloginfo('url'); ?>/om">Internet Society</a>.</p>
+  </div>
+
 </div>
 
 <?php // get_sidebar('products'); ?>
-<?php // get_sidebar('affiliated'); ?>
 
 <?php get_footer(); ?>

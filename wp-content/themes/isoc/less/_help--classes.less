@@ -1,0 +1,98 @@
+/* --------------------------------------------------------------
+		6. HELP CLASSES
+-------------------------------------------------------------- */
+
+.np {padding: 0 !important;}
+.nm {margin: 0;}
+.float-l {float: left;}
+.float-r {float: right;}
+.pl {padding-left:20px !important;}
+.hidden {display: none;}
+.notvisible {visibility: hidden;}
+
+
+.pt100 {padding-top:100px}
+.pt50 {padding-top:50px}
+.pt20 {padding-top:20px}
+.pb100 {padding-bottom:100px}
+.pb50 {padding-bottom:50px}
+.pb20 {padding-bottom:20px}
+.mt100 {margin-top:100px}
+.mt50 {margin-top:50px}
+.mt20 {margin-top:20px}
+.mb100 {margin-bottom:100px}
+.mb50 {margin-bottom:50px}
+.mb20 {margin-bottom:20px}
+
+.centered {margin-right: auto;margin-left: auto;display: block;float: none;}
+
+/* You might wanna change this 
+@media @phone {
+	[class*='mb'] {
+		margin-bottom: 0;
+	}
+	[class*='mt'] {
+		margin-top: 0;
+	}
+	[class*='pb'] {
+		padding-bottom: 0;
+	}
+	[class*='pt'] {
+		padding-top: 0;
+	}
+	.pl {padding-left: 0;}
+}*/ 
+
+.btn, button {
+	display: inline-block;
+	width: auto;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+	background: transparent;
+	color: @white;
+	border: 1px solid @white;
+
+	.transition(.2s);
+
+	&:hover {
+		color: @white;
+		background: @main-dark;
+	}
+
+	@media @phone {
+		& {
+			color: @white;
+		}
+	}
+}
+
+.blue {
+	background: @main;
+	color: @white;
+
+	&:visited {
+		color: @white;
+	}
+}
+
+.border {
+	border: 1px solid @black;
+	color: @black;
+
+	&:hover {
+		color: @white;
+		border: 1px solid @main-dark;
+	}
+}
+
+.main {
+	color: @white;
+	background: @main;
+}
+

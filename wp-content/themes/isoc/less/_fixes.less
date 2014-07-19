@@ -1,0 +1,42 @@
+/* --------------------------------------------------------------
+		5. FIXES
+-------------------------------------------------------------- */
+
+/* Firefox Fix */
+button::-moz-focus-inner, input[type=reset]::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=file] > input[type=button]::-moz-focus-inner {border: 0; margin: 0; padding: 0;}
+
+/* WebKit Fix */
+input[type=search], input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {-webkit-appearance: none;}
+[placeholder]:focus::-webkit-input-placeholder { color: transparent; }
+
+/* iOS7 Fix - some inputs collapse when empty */
+input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=time], input[type=number] {height: 2em;}
+
+/* Disable max-width for Google Map images */
+#map_canvas img, .google-maps img {max-width: none;}
+
+img, object, embed {border: none;-ms-interpolation-mode: bicubic;display: block; vertical-align: middle; max-width: 100%; width: auto; width: auto\9; /* IE Fix */ height: auto; border: 0;}
+
+
+/* --------------------------------------------------------------
+		PRINT
+-------------------------------------------------------------- */
+
+@media print{
+*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}
+a,a:visited{text-decoration:underline}
+a[href]:after{content:" (" attr(href) ")"}
+abbr[title]:after{content:" (" attr(title) ")"}
+.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
+pre,blockquote{border:1px solid #999;page-break-inside:avoid}
+thead{display:table-header-group}
+tr,img{page-break-inside:avoid}
+img{max-width:100% !important}
+@page{margin:2cm}
+p,h2,h3{orphans:3;widows:3}
+h2,h3{page-break-after:avoid}
+}
+
+
+
+
