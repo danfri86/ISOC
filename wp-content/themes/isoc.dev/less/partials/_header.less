@@ -89,6 +89,10 @@ header {
 		  -o-transition: all .1s;
 		  transition: all .1s;
 
+		  &:hover {
+		  	background:transparent;
+		  }
+
 		  &:last-child {
 		  	padding-right:0;
 
@@ -113,7 +117,7 @@ header {
 		  padding: 0;
 		  position: absolute;
 		  top: 32px;
-		  right: ;
+		  right: 0;
 		  width: 200px;
 		  -webkit-box-shadow: none;
 		  -moz-box-shadow: none;
@@ -132,12 +136,10 @@ header {
 		  background: @main; 
 		  display: block; 
 		  color: #fff;
+		  padding: 10px 15px;
 		  z-index: 999;
 
-		  a{
-		  	color: @white;
-		  	padding: 10px 15px;
-		  }
+		  a{color: @white;}
 		}
 
 		ul li ul li:hover { background: @main-dark; a{color: @white;} }

@@ -331,6 +331,9 @@ header nav ul li {
   -o-transition: all .1s;
   transition: all .1s;
 }
+header nav ul li:hover {
+  background: transparent;
+}
 header nav ul li:last-child {
   padding-right: 0;
 }
@@ -350,7 +353,7 @@ header nav ul li ul {
   padding: 0;
   position: absolute;
   top: 32px;
-  right: ;
+  right: 0;
   width: 200px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -368,11 +371,11 @@ header nav ul li ul li {
   background: #4d6ad0;
   display: block;
   color: #fff;
+  padding: 10px 15px;
   z-index: 999;
 }
 header nav ul li ul li a {
   color: #ffffff;
-  padding: 10px 15px;
 }
 header nav ul li ul li:hover {
   background: #263e91;
