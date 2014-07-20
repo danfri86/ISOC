@@ -9,7 +9,7 @@
 
 			<div class="page-header">
 				<h1><?php the_title(); ?></h1>
-				<h3>Skrivet av <a href=""><?php the_author(); ?></a>,
+				<h3>Skrivet av <a href=""><?php the_author(); ?></a>
 				<?php the_time( get_option( 'date_format' ) ); ?>.</h3>
 			</div>
 

@@ -9,6 +9,48 @@ require_once('meta-boxar/index.php');
 
 
 
+// Ställ in saker med epost som skickas av Wordpress
+add_filter( 'wp_mail_content_type','isoc_mail_content_type' );
+add_filter( 'wp_mail_from', 'isoc_mail_from' );
+add_filter( 'wp_mail_from_name', 'isoc_mail_from_name' );
+
+function isoc_mail_content_type() {
+    return "text/html";
+}
+
+function isoc_mail_from( $original_email_address ) {
+  //Make sure the email is from the same domain 
+  //as your website to avoid being marked as spam.
+  $adminMail = get_option( 'admin_email' );
+  return $adminMail;
+}
+
+function isoc_mail_from_name( $original_email_from ) {
+  return 'ISOC-SE';
+}
+
+
+
+// SMTP mail inställningar för localhost
+// Ta bort på live site
+add_action('phpmailer_init','send_smtp_email');
+function send_smtp_email( $phpmailer ) {
+  $phpmailer->isSMTP(); 
+  $phpmailer->Host = "smtp.gmail.com"; 
+  $phpmailer->SMTPAuth = true; 
+  $phpmailer->Port = "587"; 
+  $phpmailer->Username = "dfriberg86@gmail.com"; 
+  $phpmailer->Password = "bontskates"; 
+  $phpmailer->SMTPSecure = "tls"; 
+  //$phpmailer->From = "dfriberg86@gmail.com";
+  //$phpmailer->FromName = "PT-online";
+}
+
+
+
+
+
+
 
 
 // Rensa upp i wp_head
@@ -257,5 +299,60 @@ function content($limit) {
   $content = str_replace(']]>', ']]&gt;', $content);
   return $content;
 }
+
+
+
+
+
+
+
+
+
+//Shortcode för att visa "Bli medlem"-formuläret
+function isoc_bli_medlem_form( $atts, $content = null ) {
+  ob_start();
+    // Vad ska shortcoden innehålla. Innehåll här
+    include(TEMPLATEPATH . '/incl/bli-medlem-form.php');
+
+    // Sätt innehållet till en variabel
+    $formular = ob_get_contents();
+  ob_end_clean();
+
+  // Returnera innehållet
+  return $formular;
+}
+add_shortcode( 'bli_medlem_formular', 'isoc_bli_medlem_form' );
+
+
+
+
+
+
+
+
+// Lägg till fler fält på användarprofilen
+// Används som fält när medlemmar registrerar sig
+function isoc_user_meta($profile_fields) {
+
+  // Lägg till nya fält
+  $profile_fields['medlemstyp'] = 'Medlemstyp';
+  $profile_fields['adress'] = 'Adress';
+  $profile_fields['postnummer'] = 'Postnummer';
+  $profile_fields['ort'] = 'Ort';
+
+  $profile_fields['foretag-namn'] = 'Företag namn';   
+  $profile_fields['foretag-adress'] = 'Företag adress';
+  $profile_fields['foretag-postnummer'] = 'Företag postnummer';
+  $profile_fields['foretag-ort'] = 'Företag ort';
+
+  // Ta bort onödiga fält
+  unset($profile_fields['url']);
+  unset($profile_fields['aim']);
+  unset($profile_fields['yim']);
+  unset($profile_fields['jabber']);
+
+  return $profile_fields;
+}
+add_filter('user_contactmethods', 'isoc_user_meta');
 
 ?>

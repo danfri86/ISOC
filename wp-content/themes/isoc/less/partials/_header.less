@@ -104,8 +104,10 @@ header {
 		  	color: @black;
 		  }
 		}
-
-		ul li.menu-item-has-children:hover {
+		
+		ul li:hover,
+		ul li.menu-item-has-children:hover,
+		ul li.page_item_has_children:hover {
 			background: @main;
 			color: @white;
 		}
@@ -163,7 +165,8 @@ header {
 
 				font-size: 90%;
 
-				&.menu-item-has-children > a {
+				&.menu-item-has-children > a,
+				&.page_item_has_children > a {
 			  	padding-right: 15px;
 
 			  	&:after {
@@ -270,7 +273,9 @@ header {
 					padding: 20px 0;
 					border-bottom: 1px solid #999;					
 
-					&:hover, &.menu-item-has-children:hover {
+					&:hover,
+					&.menu-item-has-children:hover,
+					&.page_item_has_children:hover {
 						background: #f5f5f5;
 						color: black;
 						border-bottom: 1px solid @black;
