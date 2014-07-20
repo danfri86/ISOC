@@ -267,7 +267,7 @@ header {
   padding: 30px 0;
 }
 header h1.logo {
-  width: 30%;
+  width: 170px;
   float: left;
 }
 header input {
@@ -550,7 +550,6 @@ i {
 @media only screen and (max-width: 640px) {
   .hero .hero-headline a.border {
     color: #333333;
-    margin-left: 0;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
@@ -574,7 +573,7 @@ i {
     position: relative;
     padding: 0px 20px 60px 20px;
     width: auto;
-    text-align: left;
+    text-align: center;
     left: 0;
   }
 }
@@ -943,6 +942,26 @@ input {
   margin-top: 10px;
 }
 /* --------------------------------------------------------------
+			UNDERSIDA — styrelsen
+-------------------------------------------------------------- */
+.styrelse .sidenote {
+  margin-top: 40px;
+}
+.styrelse .box-6 {
+  text-align: center;
+}
+.styrelse .box-6 img {
+  height: 300px;
+  width: auto;
+  margin: 0 auto;
+}
+.styrelse .box-6 p {
+  margin-top: 1em;
+}
+.styrelse .box-6 p small {
+  display: block;
+}
+/* --------------------------------------------------------------
 			4.4 FOOTER
 -------------------------------------------------------------- */
 footer[role=contentinfo] {
@@ -953,6 +972,12 @@ footer[role=contentinfo] {
 footer[role=contentinfo] input {
   border: none;
   color: #333333;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 footer[role=contentinfo] ul li {
   list-style: none;
