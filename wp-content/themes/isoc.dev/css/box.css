@@ -930,6 +930,15 @@ input {
   border-bottom: 1px solid #dddddd;
   padding-bottom: 30px;
 }
+.posts ul li img {
+  margin-top: -30px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
 .posts ul li a {
   color: #333333;
 }
