@@ -58,14 +58,14 @@ if( isset( $_POST['bli-medlem-submit'] ) && isset( $_POST['post_nonce_field'] ) 
 
 				<div class="box-4 np">
 					<div class="box-10 sidenote tablet-12">
-						<h4>Dela</h4>
-						<p>Dela den här härliga artikeln på sociala medier är du gullig.</p>
+						<h4>ISOC-SE</h4>
+						<p>ISOC-SE arbetar för att internet ska fortsätta utvecklas som en plattform för ekonomisk och social utveckling för människor på alla håll i världen. Vi menar att internets styrka ligger i dess öppenhet och i dess decentraliserade struktur.</p>
 					</div>
 
 					<!-- om bilaga finns -->
 					<div class="box-10 sidenote tablet-12">
-						<h4>Bilaga</h4>
-						<a href="!#" class="btn blue bilaga"><i class="fa fa-paperclip"></i> Filnamn.pdf <small>37kb</small></a>
+						<h4>Som medlem</h4>
+						<p>Som medlem i ISOC-SE är du också medlem i Internet Society, som har över 50 000 medlemmar över hela världen. Läs mer om <a href="!#">Internet Society.</a></p>
 					</div>
 				</div>
     </div>
