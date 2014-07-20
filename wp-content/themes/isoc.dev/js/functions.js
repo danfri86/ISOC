@@ -30,8 +30,7 @@ $(document).ready(function() {
 	// Verifiering av "bli medlem"-formulär
 	// Löser sig ganska lätt med HTML5.
 	$( "#medlemFormular" ).submit(function( event ) {
-		alert("wop!");
-		event.preventDefault();
+
 	});
 
 
