@@ -111,11 +111,11 @@ add_action('after_setup_theme','isoc_setup');
 function isoc_styles_scripts() {
 	wp_enqueue_script('jquery');
 
-	wp_enqueue_style( 'isoc_style', get_bloginfo('template_directory') .'/css/style.css', false, false );
 
   wp_enqueue_style( 'isoc_animate', get_bloginfo('template_directory') .'/libs/animate.css/animate.min.css', false, false );
   wp_enqueue_style( 'isoc_fontIcons', get_bloginfo('template_directory') .'/libs/font-awesome/css/font-awesome.min.css', false, false );
   wp_enqueue_style( 'isoc_normalize', get_bloginfo('template_directory') .'/libs/normalize-css/normalize.css', false, false );
+  wp_enqueue_style( 'isoc_style', get_bloginfo('template_directory') .'/css/style.css', false, false );
 
 	wp_enqueue_script( 'modernizr', get_bloginfo('template_directory') .'/libs/modernizr/modernizr.js', array('jquery'), false );
 
