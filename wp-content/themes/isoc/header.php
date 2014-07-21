@@ -54,9 +54,9 @@
 
  			<div class="top-menu">
  				<ul>
- 					<li><a href="!#">Kontakt</a></li>
- 					<li><a href="!#">Medlemslogin</a></li>
- 					<li><a href="!#">Language <i class="fa fa-globe"></i></a></li>
+ 					<li><a href="<?php bloginfo('url'); ?>/kontakt">Kontakt</a></li>
+ 					<?php //<li><a href="!#">Medlemslogin</a></li> ?>
+ 					<?php //<li><a href="!#">Language <i class="fa fa-globe"></i></a></li> ?>
  				</ul>
  			</div>
  			<span class="mobile-menu"><i class="fa fa-bars"></i> Meny</span>

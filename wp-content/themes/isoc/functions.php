@@ -2,7 +2,7 @@
 
 //require_once('custom-post-types/index.php');
 require_once('theme-options/index.php');
-require_once('meta-boxar/index.php');
+require_once('cpt-metaboxes/index.php');
 
 
 
@@ -322,6 +322,28 @@ function isoc_bli_medlem_form( $atts, $content = null ) {
   return $formular;
 }
 add_shortcode( 'bli_medlem_formular', 'isoc_bli_medlem_form' );
+
+
+
+
+
+
+
+
+//Shortcode för att lista styrelsen
+function isoc_styrelse( $atts, $content = null ) {
+  ob_start();
+    // Vad ska shortcoden innehålla. Innehåll här
+    include(TEMPLATEPATH . '/incl/styrelse.php');
+
+    // Sätt innehållet till en variabel
+    $content = ob_get_contents();
+  ob_end_clean();
+
+  // Returnera innehållet
+  return $content;
+}
+add_shortcode( 'styrelse', 'isoc_styrelse' );
 
 
 

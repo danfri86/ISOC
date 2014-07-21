@@ -18,11 +18,11 @@ if( isset( $_POST['bli-medlem-submit'] ) && isset( $_POST['post_nonce_field'] ) 
 		$formSuccess = 'Anmälan är gjord';
 
 		// Skapa användare vid klientregistrering
-		require_once('incl/skapa-anvandare.php');
+		require_once('incl/skapa-medlem.php');
 
 		// Anropa funktionen i filen ovan
 		// $return måste användas för att felmeddelande ska kunna visas
-		$return = skapaAnvandare();
+		$return = skapaMedlem();
 	}
 }
 ?>

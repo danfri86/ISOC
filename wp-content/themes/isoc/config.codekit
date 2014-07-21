@@ -2,6 +2,384 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "16877",
 "files": {
+	"\/cpt-metaboxes\/custom-post-types.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/custom-post-types.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/css\/meta-box.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/css\/meta-box.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/demo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/demo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/images\/add.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 124,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/add.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/add.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/images\/delete-16.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1781,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/delete-16.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/delete-16.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/images\/edit.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 253,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/edit.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/edit.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/images\/move.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 262,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/move.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/move.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/images\/remove.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 91,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/remove.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/images\/remove.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/clike.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/clike.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/min\/clike-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/codemirror.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/codemirror.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/codemirror.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/codemirror.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/min\/codemirror-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/css.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/css.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/min\/css-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/javascript.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/javascript.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/min\/javascript-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/php.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/php.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/min\/php-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/solarizedDark.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/solarizedDark.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/solarizedLight.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/solarizedLight.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/xml.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/xml.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/codemirror\/min\/xml-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_0_aaaaaa_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_0_aaaaaa_40x100.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_0_aaaaaa_40x100.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_75_ffffff_40x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 178,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_75_ffffff_40x100.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_75_ffffff_40x100.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_55_fbf9ee_1x400.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 120,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_55_fbf9ee_1x400.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_55_fbf9ee_1x400.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_65_ffffff_1x400.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 105,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_65_ffffff_1x400.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_65_ffffff_1x400.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_dadada_1x400.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 111,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_dadada_1x400.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_dadada_1x400.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_e6e6e6_1x400.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_e6e6e6_1x400.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_e6e6e6_1x400.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_95_fef1ec_1x400.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_95_fef1ec_1x400.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_95_fef1ec_1x400.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_222222_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4369,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_222222_256x240.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_222222_256x240.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_2e83ff_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4369,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_2e83ff_256x240.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_2e83ff_256x240.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_454545_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4369,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_454545_256x240.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_454545_256x240.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_888888_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4369,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_888888_256x240.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_888888_256x240.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_cd0a0a_256x240.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4369,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_cd0a0a_256x240.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_cd0a0a_256x240.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/jquery-ui-timepicker-addon.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/jquery-ui-timepicker-addon.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/min\/jquery-ui-timepicker-addon-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/jquery-ui.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/jquery-ui\/jquery-ui.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/meta-box.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/meta-box.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/min\/meta-box-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2.js",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/select2\/min\/select2-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 613,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2x2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 845,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2x2.png",
+		"outputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/js\/select2\/select2x2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/cpt-metaboxes\/meta-boxar\/my-meta-box-class.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cpt-metaboxes\/meta-boxar\/my-meta-box-class.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/editor-style-rtl.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -26,11 +404,35 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/functions.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/functions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/header.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/header.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/incl\/bli-medlem-form.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/incl\/bli-medlem-form.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/incl\/skapa-medlem.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/incl\/skapa-medlem.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -262,6 +664,25 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/less\/partials\/_footer.less",
 		"outputAbbreviatedPath": "\/less\/css\/_footer.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/partials\/_header.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/partials\/_header.less",
+		"outputAbbreviatedPath": "\/less\/css\/_header.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -3677,373 +4098,19 @@
 		"outputAbbreviatedPath": "\/libs\/normalize-css\/README.html",
 		"outputPathIsSetByUser": 0
 		},
-	"\/meta-boxar\/css\/meta-box.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/css\/meta-box.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/demo.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/demo.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/images\/add.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 124,
-		"inputAbbreviatedPath": "\/meta-boxar\/images\/add.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/images\/add.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/images\/delete-16.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1781,
-		"inputAbbreviatedPath": "\/meta-boxar\/images\/delete-16.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/images\/delete-16.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/images\/edit.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 253,
-		"inputAbbreviatedPath": "\/meta-boxar\/images\/edit.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/images\/edit.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/images\/move.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 262,
-		"inputAbbreviatedPath": "\/meta-boxar\/images\/move.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/images\/move.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/images\/remove.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 91,
-		"inputAbbreviatedPath": "\/meta-boxar\/images\/remove.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/images\/remove.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/index.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/index.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/js\/codemirror\/clike.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/clike.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/min\/clike-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/codemirror\/codemirror.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/codemirror.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/js\/codemirror\/codemirror.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/codemirror.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/min\/codemirror-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/codemirror\/css.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/css.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/min\/css-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/codemirror\/javascript.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/javascript.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/min\/javascript-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/codemirror\/php.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/php.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/min\/php-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/codemirror\/solarizedDark.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/solarizedDark.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/js\/codemirror\/solarizedLight.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/solarizedLight.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/js\/codemirror\/xml.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/xml.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/codemirror\/min\/xml-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_0_aaaaaa_40x100.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 180,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_0_aaaaaa_40x100.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_0_aaaaaa_40x100.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_75_ffffff_40x100.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 178,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_75_ffffff_40x100.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_flat_75_ffffff_40x100.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_55_fbf9ee_1x400.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 120,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_55_fbf9ee_1x400.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_55_fbf9ee_1x400.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_65_ffffff_1x400.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 105,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_65_ffffff_1x400.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_65_ffffff_1x400.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_dadada_1x400.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 111,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_dadada_1x400.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_dadada_1x400.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_e6e6e6_1x400.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 110,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_e6e6e6_1x400.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_75_e6e6e6_1x400.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_95_fef1ec_1x400.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 119,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_95_fef1ec_1x400.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_glass_95_fef1ec_1x400.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 101,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-bg_highlight-soft_75_cccccc_1x100.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_222222_256x240.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4369,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_222222_256x240.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_222222_256x240.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_2e83ff_256x240.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4369,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_2e83ff_256x240.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_2e83ff_256x240.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_454545_256x240.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4369,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_454545_256x240.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_454545_256x240.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_888888_256x240.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4369,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_888888_256x240.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_888888_256x240.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_cd0a0a_256x240.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4369,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_cd0a0a_256x240.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/images\/ui-icons_cd0a0a_256x240.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/jquery-ui\/jquery-ui-timepicker-addon.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/jquery-ui-timepicker-addon.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/min\/jquery-ui-timepicker-addon-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/jquery-ui\/jquery-ui.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/jquery-ui\/jquery-ui.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/js\/meta-box.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/meta-box.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/min\/meta-box-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/select2\/select2.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/select2\/select2.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/meta-boxar\/js\/select2\/select2.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/select2\/select2.js",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/select2\/min\/select2-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/meta-boxar\/js\/select2\/select2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 613,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/select2\/select2.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/select2\/select2.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/js\/select2\/select2x2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 845,
-		"inputAbbreviatedPath": "\/meta-boxar\/js\/select2\/select2x2.png",
-		"outputAbbreviatedPath": "\/meta-boxar\/js\/select2\/select2x2.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/meta-boxar\/my-meta-box-class.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/meta-boxar\/my-meta-box-class.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
 	"\/page-nyheter.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-nyheter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -4062,6 +4129,14 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sidebar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/single.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},

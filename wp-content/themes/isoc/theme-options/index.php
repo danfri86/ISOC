@@ -38,6 +38,7 @@ $isoc_options->OpenTabs_container('');
 $isoc_options->TabsListing(array(
   'links' => array(
     'options_framsida' => 'Framsidan',
+    'options_bli_medlem' => 'Bli medlem',
   )
 ));
 
@@ -47,14 +48,10 @@ $isoc_options->TabsListing(array(
 $isoc_options->OpenTab('options_framsida');
 
 /**
- * Add fields to your admin page first tab
- * 
- * Simple options:
- * input text, checbox, select, radio 
- * textarea
+ * Add fields to your admin tab
  */
 //title
-$isoc_options->Title(__("Val som rör framsidan","apc"));
+$isoc_options->Title('Val som rör framsidan');
 //An optionl descrption paragraph
 
 //textarea field
@@ -69,4 +66,25 @@ $isoc_options->addTextarea('banner_text',array('name'=> 'Text', 'std'=> '', 'des
  */   
 $isoc_options->CloseTab();
 
-?>
+
+
+
+
+
+$isoc_options->OpenTab('options_bli_medlem');
+
+/**
+ * Add fields to your admin tab
+ */
+//title
+$isoc_options->Title('Formulär "Bli medlem"');
+//An optionl descrption paragraph
+
+$isoc_options->addParagraph('Här väljer du vad som ska skickas i konformations-mailet när en ny medlem registrerat sig i ISOC-SE.');
+$isoc_options->addText('bliMedlem_rubrik', array('name' => 'Rubrik', 'std' => 'Välkommen till ISOC-SE!'));
+$isoc_options->addTextarea('bliMedlem_text',array('name'=> 'Meddelande', 'std'=> 'Meddelande'));
+
+/**
+ * Close first tab
+ */   
+$isoc_options->CloseTab();
