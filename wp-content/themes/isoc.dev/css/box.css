@@ -547,11 +547,11 @@ i {
     color: #ffffff;
   }
 }
-.hero .hero-headline a.border {
+.hero .hero-headline .border {
   margin-left: 10px;
 }
 @media only screen and (max-width: 640px) {
-  .hero .hero-headline a.border {
+  .hero .hero-headline .border {
     color: #333333 !important;
   }
 }
