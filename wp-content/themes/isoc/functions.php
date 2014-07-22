@@ -131,6 +131,34 @@ add_action( 'wp_enqueue_scripts', 'isoc_styles_scripts' );
 
 
 
+// "Logga in"-sidan CSS
+function isoc_login_css() { ?>
+    <link rel="stylesheet" href="<?php echo get_bloginfo( 'stylesheet_directory' ) . '/css/login.css'; ?>" type="text/css" media="all" />
+<?php } ?>
+<?php
+add_action( 'login_enqueue_scripts', 'isoc_login_css' );
+
+
+
+
+
+// Ändra länkar på "Logga in"-sidan
+function isoc_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'isoc_login_logo_url' );
+
+function isoc_login_logo_url_title() {
+    return get_bloginfo('title');
+}
+add_filter( 'login_headertitle', 'isoc_login_logo_url_title' );
+
+
+
+
+
+
+
 
 // Registrera sidebars
 function isoc_sidebars() {
@@ -154,7 +182,7 @@ add_action( 'widgets_init', 'isoc_sidebars' );
 
 
 // Lägg till en sökikon sist i menyn
-add_filter( 'wp_nav_menu_items', 'isoc_nav_items', 10, 2 );
+//add_filter( 'wp_nav_menu_items', 'isoc_nav_items', 10, 2 );
 
 function isoc_nav_items($items, $args) {
   // Lägg till i header menyn

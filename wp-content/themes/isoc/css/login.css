@@ -1,0 +1,6 @@
+body.login div#login h1 a {
+  background-image: url('../static/logotype.png');
+  background-size: 170px 74px;
+  background-position: center center;
+  width: 170px;
+}
