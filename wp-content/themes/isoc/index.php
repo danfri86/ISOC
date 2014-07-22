@@ -55,6 +55,7 @@ $options = get_option('isoc_options');
               // Om det inte finns en utvald bild så hämtas artikelns första bild
               $args = array(
                  'post_type' => 'attachment',
+                 'post_mime_type' => array('image/jpg', 'image/jpeg', 'image/png', 'image/gif'),
                  'numberposts' => 1,
                  'post_status' => null,
                  'post_parent' => $post->ID
