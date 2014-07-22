@@ -18,11 +18,17 @@ Template Name: Nyheter
   		<div class="box-8 tablet-12">
 
 				<?php
-				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				// $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-				if (have_posts()) : 
+				// query_posts('paged=' . $paged);
+
+				if ( have_posts() ){
 					echo '<ul>';
-				while (have_posts()) : the_post();
+				
+				
+				// Start the Loop.
+				while ( have_posts() ) {
+					the_post();
 				?>
 
 		        <li class="box-12">
@@ -78,17 +84,16 @@ Template Name: Nyheter
 	            </div>
 
 						</li>
-					<?php endwhile;
+					<?php }
+					echo '</ul>';
 
-	    	echo '</ul>';
+				} else {
 
-	    	else :
-
-	    	endif;
-	    	?>
+				}
+				?>
 
 	    	<div class="pagination">
-	    		<?php pagination('»', '«'); ?>
+	    		<?php pagination(); ?>
 	    	</div>
 
 			</div>

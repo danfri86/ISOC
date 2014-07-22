@@ -18,21 +18,24 @@ Template Name: Nyheter
   		<div class="box-8 tablet-12">
 
 				<?php
-				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		    // WP_Query arguments
-		    $args = array (
-		      'post_type'   => 'post',
-		      'paged' => $paged
-		    );
+				$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
-		    // The Query
-		    $nyhetsArkiv = new WP_Query( $args );
+				// query_posts('paged=' . $paged);
 
-		    // The Loop
-		    if ( $nyhetsArkiv->have_posts() ) {
-	    		echo '<ul>';
-		      while ( $nyhetsArkiv->have_posts() ) {
-		        $nyhetsArkiv->the_post(); ?>
+				$args = array(
+					'post_type' => 'post',
+					'paged' => $paged,
+				);
+
+				$nyheter = new WP_Query( $args );
+
+				if ( $nyheter->have_posts() ){
+					echo '<ul>';
+				
+				// Start the Loop.
+				while ( $nyheter->have_posts() ) {
+					$nyheter->the_post();
+				?>
 
 		        <li class="box-12">
 
@@ -87,19 +90,16 @@ Template Name: Nyheter
 	            </div>
 
 						</li>
-					<?php } 
+					<?php }
+					echo '</ul>';
 				} else {
-	      // no posts found
-	    	}
 
-	    	echo '</ul>';
-
-	    	// Restore original Post Data
-	    	wp_reset_postdata();
-	    	?>
+				}
+				wp_reset_postdata();
+				?>
 
 	    	<div class="pagination">
-	    		<?php pagination('»', '«'); ?>
+	    		<?php paginationNyheter(); ?>
 	    	</div>
 
 			</div>
