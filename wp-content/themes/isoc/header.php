@@ -31,7 +31,7 @@
  			<h1 class="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/static/logotype.png" alt=""></a></h1>
 
  			<nav>
- 				<span class="mobile-close"><i class="fa fa-times"></i> Stäng</span>
+ 				<span class="mobile-close btn border"><!--<i class="fa fa-times"></i>--> Stäng</span>
 				
 				<?php wp_nav_menu(
 					array(

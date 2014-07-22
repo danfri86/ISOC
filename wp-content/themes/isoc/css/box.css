@@ -330,7 +330,7 @@ header span.mobile-close {
     display: block;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 5px;
   }
 }
 header nav {
