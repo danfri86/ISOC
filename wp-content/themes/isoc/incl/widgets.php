@@ -56,7 +56,8 @@ class bilagor_widget extends WP_Widget
                 echo get_the_title( $bilaga['bilaga_fil']['id'] );
 
                 // Hämta filändendelsen. Hela url'en som parameter. ['ext'] hämtar bara filändelsen
-                echo '.'. wp_check_filetype($bilaga['bilaga_fil']['url'])['ext'];
+                $filtyp = wp_check_filetype( $bilaga['bilaga_fil']['url'] );
+                echo '.'. $filtyp['ext'];
 
                 echo ' <small>'. floor( filesize( get_attached_file($bilaga['bilaga_fil']['id']) )/1000 ) .'kb</small>';
               echo '</a>';

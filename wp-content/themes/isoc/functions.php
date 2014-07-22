@@ -2,7 +2,7 @@
 
 require_once('theme-options/index.php');
 require_once('cpt-metaboxes/index.php');
-//require_once('incl/widgets.php');
+require_once('incl/widgets.php');
 
 
 
