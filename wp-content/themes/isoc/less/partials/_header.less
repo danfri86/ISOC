@@ -2,14 +2,47 @@
 		4. SITE
 			4.1 HEADER
 -------------------------------------------------------------- */
+header nav ul li.menu-item-has-children > a,
+header nav ul li.page_item_has_children > a {
+  padding-right: 15px;
+}
+header nav ul li.menu-item-has-children > a:after,
+header nav ul li.page_item_has_children > a:after {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f107';
+}
+@media only screen and (max-width: 640px) {
+  header nav ul li.menu-item-has-children > a:after,
+  header nav ul li.page_item_has_children > a:after {
+    top: 20px;
+  }
+}
 
+header nav ul li.menu-item-has-children:hover {
+	background: @main;
+	color: @white;
+
+	a {
+		color: @white !important;
+	}
+}
 header {
 
 	padding: 30px 0;
 
 	h1.logo {
-		width: 30%;
+		width: 170px;
 		float: left;
+		margin-top: 16px;
 	}
 
 	input {
@@ -33,7 +66,7 @@ header {
 				display: block;
 				position: absolute;
 				right: 20px;
-				top: 22px;
+				top: 25px;
 			}
 		}
 	}
@@ -88,6 +121,15 @@ header {
 		  -ms-transition: all .1s;
 		  -o-transition: all .1s;
 		  transition: all .1s;
+		  color: @black;
+
+		  a {
+		  	color: @black !important;
+		  }
+
+		  &:hover {
+			color: @main !important;
+		  }
 
 		  &:last-child {
 		  	padding-right:0;
@@ -99,15 +141,12 @@ header {
 		  	}
 		  }
 
-		  a,
-		  a:visited {
+		  a {
 		  	color: @black;
 		  }
 		}
-		
-		ul li:hover,
-		ul li.menu-item-has-children:hover,
-		ul li.page_item_has_children:hover {
+
+		ul li.dropdown:hover {
 			background: @main;
 			color: @white;
 		}
@@ -116,7 +155,7 @@ header {
 		  padding: 0;
 		  position: absolute;
 		  top: 32px;
-		  left: -5px;
+		  right: 0;
 		  width: 200px;
 		  -webkit-box-shadow: none;
 		  -moz-box-shadow: none;
@@ -138,13 +177,10 @@ header {
 		  padding: 10px 15px;
 		  z-index: 999;
 
-		  a,
-		  a:visited {
-		  	color: @white;
-		  }
+		  a{color: @white !important;}
 		}
 
-		ul li ul li:hover { background: @main-dark; a{color: @white;} }
+		ul li ul li:hover { background: @main-dark; a{color: @white !important;} }
 		
 		ul li:hover ul {
 		  display: block;
@@ -165,31 +201,10 @@ header {
 
 				font-size: 90%;
 
-				&.menu-item-has-children > a,
-				&.page_item_has_children > a {
-			  	padding-right: 15px;
 
-			  	&:after {
-			  		position: absolute;
-			  		top: 9px;
-			  		right: 10px;
-
-			  		font-family: 'FontAwesome';
-			  		display: inline-block;
-
-					  font-style: normal;
-					  font-weight: normal;
-					  line-height: 1;
-					  -webkit-font-smoothing: antialiased;
-					  -moz-osx-font-smoothing: grayscale;
-
-			  		content: '\f107';
-
-			  		@media @phone {
-			  			top: 20px;
-			  		}
-			  	}
-			  }
+				i {
+					margin-left: 5px;
+				}
 
 				&.search {
 					i {
@@ -249,7 +264,9 @@ header {
 }
 
 @media @phone {
-
+	header nav ul li.menu-item-has-children:hover a {
+	color: @black !important;
+}
 	.top-menu {
 		visibility: hidden;
 	}
@@ -273,12 +290,13 @@ header {
 					padding: 20px 0;
 					border-bottom: 1px solid #999;					
 
-					&:hover,
-					&.menu-item-has-children:hover,
-					&.page_item_has_children:hover {
-						background: #f5f5f5;
-						color: black;
+					&:hover, &.dropdown:hover {
+						background: #f5f5f5 !important;
+						color: black !important;
 						border-bottom: 1px solid @black;
+						a {
+							color: @black !important;
+						}
 					}
 
 					ul {
@@ -288,14 +306,14 @@ header {
 		  				margin-top: 15px;
 		  				position: static;
 		  				width: 100%;
-							opacity: 1;
+						opacity: 1;
 		  				visibility: visible;
 		  				display: block;
 		  				background: #f5f5f5;
 
 						li {
 							display: block;
-							color: @black;
+							color: @black !important;
 							margin: 0;
 							width: 50%;
 							float: left;
