@@ -27,11 +27,7 @@ class bilagor_widget extends WP_Widget
   {
     extract($args, EXTR_SKIP);
  
-    echo $before_widget;
-    $title = empty($instance['title']) ? '' : apply_filters('widget_title', $instance['title']);
- 
-    if (!empty($title))
-      echo $before_title . $title . $after_title;;
+    
     
     global $post;
 
@@ -50,6 +46,12 @@ class bilagor_widget extends WP_Widget
 
           $allaBilagor = get_post_meta($post->ID,'bilaga_re_',true);
           if( $allaBilagor ) {
+            echo $before_widget;
+            $title = empty($instance['title']) ? '' : apply_filters('widget_title', $instance['title']);
+         
+            if (!empty($title))
+              echo $before_title . $title . $after_title;
+
             foreach ($allaBilagor as $bilaga){
                 //print_r($bilaga['bilaga_fil']);
                 
@@ -63,6 +65,7 @@ class bilagor_widget extends WP_Widget
                   echo ' <small>'. floor( filesize( get_attached_file($bilaga['bilaga_fil']['id']) )/1000 ) .'kb</small>';
                 echo '</a>';
             }
+            echo $after_widget;
           }
 
           // $bilaga = get_post_meta($post->ID,'image_field_id',true);
@@ -76,7 +79,7 @@ class bilagor_widget extends WP_Widget
     // Restore original Post Data
     wp_reset_postdata();
  
-    echo $after_widget;
+    
   }
 }
 add_action( 'widgets_init', create_function('', 'return register_widget("bilagor_widget");') );
