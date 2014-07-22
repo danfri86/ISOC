@@ -51,15 +51,15 @@ class bilagor_widget extends WP_Widget
           $allaBilagor = get_post_meta($post->ID,'bilaga_re_',true);
           foreach ($allaBilagor as $bilaga){
               //print_r($bilaga['bilaga_fil']);
-              echo '<p>';
-                echo $bilaga['bilaga_fil']['url'];
-              echo '</p>';
               
-              echo '<p>';
-                $filData = get_attached_file( $bilaga['bilaga_fil']['id'] );
-                print_r($filData['file']);
-                echo $filData['image_meta'];
-              echo '</p>';
+              echo '<a href="'. $bilaga['bilaga_fil']['url'] .'" target="_blank" class="btn blue bilaga"><i class="fa fa-paperclip"></i>';
+                echo get_the_title( $bilaga['bilaga_fil']['id'] );
+
+                // Hämta filändendelsen. Hela url'en som parameter. ['ext'] hämtar bara filändelsen
+                echo '.'. wp_check_filetype($bilaga['bilaga_fil']['url'])['ext'];
+
+                echo ' <small>'. floor( filesize( get_attached_file($bilaga['bilaga_fil']['id']) )/1000 ) .'kb</small>';
+              echo '</a>';
           }
 
           // $bilaga = get_post_meta($post->ID,'image_field_id',true);

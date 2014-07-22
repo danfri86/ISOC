@@ -32,12 +32,6 @@
 
 			<div class="box-4 np">
 				<?php get_sidebar(); ?>
-
-				<!-- om bilaga finns -->
-				<div class="box-10 sidenote tablet-12">
-					<h4>Bilaga</h4>
-					<a href="!#" class="btn blue bilaga"><i class="fa fa-paperclip"></i> Filnamn.pdf <small>37kb</small></a>
-				</div>
 			</div>
     </div>
   </div>

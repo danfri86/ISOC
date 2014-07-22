@@ -102,25 +102,7 @@ Template Name: Nyheter
 			</div>
 
 			<div class="box-4 np">
-				<div class="box-10 sidenote tablet-12">
-						<h4 class="">Sök</h4>
-						<input type="text" placeholder="Sök bland nyheter">
-				</div>
-
-				<div class="box-10 sidenote tablet-12">
-					<h4 class="">Akriv</h4>
-					<ul class="nyheter-arkiv">
-						<li>Oktober 2014</li>
-						<li>Juli 2014</li>
-						<li>Juni 2014</li>
-						<li>Augusti 2014</li>
-						<li>April 2014</li>
-						<li>Maj 2014</li>
-						<li>Juni 2014</li>
-						<li>Januari 2014</li>
-						<li>Juni 2014</li>
-					</ul>
-				</div>
+				<?php get_sidebar(); ?>
 			</div>
 
 		</div>
