@@ -107,19 +107,23 @@ $options = get_option('isoc_options');
   <div class="box-3 puff mt20 arkiv tablet-12">
     <h3 class="uppercase">arkivet</h3>
 
-    <ul>
-      <li>Oktober 2014</li>
-      <li>Juli 2014</li>
-      <li>Juni 2014</li>
-      <li>Augusti 2014</li>
-      <li>April 2014</li>
-      <li>Maj 2014</li>
-      <li>Juni 2014</li>
-      <li>Januari 2014</li>
-      <li>Juni 2014</li>
+    <?php
+    $args = array(
+      'type'            => 'monthly',
+      'limit'           => '11',
+      'format'          => 'html', 
+      'before'          => '',
+      'after'           => '',
+      'show_post_count' => false,
+      'echo'            => 1,
+      'order'           => 'DESC'
+    );
 
-      <li><a href="!#" class="btn blue">Äldre inlägg</a></li>
-    </ul>
+    echo '<ul>';
+      wp_get_archives( $args );
+      echo '<li><a href="'. get_bloginfo('url') .'/nyheter" class="btn blue">Äldre inlägg</a></li>';
+    echo '</ul>';
+    ?>
   </div>
 
   <div class="box-12 puff mt50 om-isoc">
