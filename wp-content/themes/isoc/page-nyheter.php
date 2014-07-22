@@ -49,13 +49,16 @@ Template Name: Nyheter
 	              // Om det inte finns en utvald bild så hämtas artikelns första bild
 	              $args = array(
 	                 'post_type' => 'attachment',
+	                 'post_mime_type' => array('image/jpg', 'image/jpeg', 'image/png', 'image/gif'),
 	                 'numberposts' => 1,
 	                 'post_status' => null,
 	                 'post_parent' => $post->ID
 	              );
 
 	              $attachments = get_posts( $args );
-	              if ( $attachments && wp_attachment_is_image($post->ID) ) {
+	              // Om det finns en attachment och det är en bild
+	              // Fix för om inlägget har bilagor
+	              if ( $attachments ) {
 	                echo '<div class="box-3">';
 	                  foreach ( $attachments as $attachment ) {
 	                    echo wp_get_attachment_image( $attachment->ID, 'thumbnail', false );
