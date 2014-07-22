@@ -15,7 +15,6 @@
 
 			<div class="box-12 np">
 				<div class="box-8 tablet-12">
-		  		<p>
 		  			<span class="kategori">
 		  			<?php foreach((get_the_category()) as $category) {
               echo $category->category_nicename . ' ';
@@ -23,7 +22,6 @@
            </span>
 
            <?php // the_excerpt(); ?>
-          </p> 
 					
 					<?php the_content(); ?>
 				</div>
