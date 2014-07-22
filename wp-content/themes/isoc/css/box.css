@@ -1403,6 +1403,12 @@ button:hover {
   background: #4d6ad0;
   color: #ffffff;
 }
+.blue:visited {
+  color: #ffffff;
+}
+.blue:hover {
+  color: #ffffff !important;
+}
 .border {
   border: 1px solid #333333;
   color: #333333;
