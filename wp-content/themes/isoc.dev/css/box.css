@@ -320,7 +320,7 @@ header span.mobile-menu {
     display: block;
     position: absolute;
     right: 20px;
-    top: 22px;
+    top: 25px;
   }
 }
 header span.mobile-close {
@@ -580,10 +580,15 @@ i {
   left: 20px;
 }
 .hero .hero-headline h1 {
-  padding-top: 40px;
+  padding-top: 30px;
   line-height: 1.1;
   color: #263e91;
   font-weight: bolder;
+}
+@media only screen and (max-width: 640px) {
+  .hero .hero-headline h1 {
+    padding-top: 40px;
+  }
 }
 .hero .hero-headline p {
   color: #333333;

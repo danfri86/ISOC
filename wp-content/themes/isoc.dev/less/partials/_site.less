@@ -43,10 +43,16 @@ i {
 		left: 20px;
 
 		h1 {
-			padding-top: 40px;
+			padding-top: 30px;
 			line-height: 1.1;
 			color: @main-dark;
 			font-weight: bolder;
+
+			@media @phone {
+				& {
+					padding-top: 40px;
+				}
+			}
 		}
 
 		p {
