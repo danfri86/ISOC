@@ -93,7 +93,7 @@ Template Name: Nyheter
 					<?php }
 					echo '</ul>';
 				} else {
-
+					echo '<p>Inga nyheter är postade än</p>';
 				}
 				wp_reset_postdata();
 				?>

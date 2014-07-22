@@ -92,9 +92,11 @@ $options = get_option('isoc_options');
 
           </div>
         <?php }
-    } else {
-      // no posts found
-    }
+    } else { ?>
+      <div class="nyhet">
+        <p>Inga nyheter är postade än</p>
+      </div>
+    <?php }
 
     // Restore original Post Data
     wp_reset_postdata();
@@ -119,10 +121,16 @@ $options = get_option('isoc_options');
       'order'           => 'DESC'
     );
 
-    echo '<ul>';
-      wp_get_archives( $args );
-      echo '<li><a href="'. get_bloginfo('url') .'/nyheter" class="btn blue">Äldre inlägg</a></li>';
-    echo '</ul>';
+    if( wp_get_archives() ) {
+      // Om det finns inlägg i arkiver
+      echo '<ul>';
+        wp_get_archives( $args );
+        echo '<li><a href="'. get_bloginfo('url') .'/nyheter" class="btn blue">Äldre inlägg</a></li>';
+      echo '</ul>';
+    } else {
+      // Om arkivet är tomt
+      echo '<p>Arkivet är tomt</p>';
+    }
     ?>
   </div>
 
