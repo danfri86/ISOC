@@ -1411,7 +1411,7 @@ button:hover {
 }
 .border {
   border: 1px solid #333333;
-  color: #333333;
+  color: #333333 !important;
 }
 .border a {
   color: #333333;
