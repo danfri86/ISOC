@@ -163,6 +163,9 @@ a:focus,
 a:visited:focus {
   color: #2b47a5;
 }
+ol {
+  padding-left: 30px;
+}
 /* --------------------------------------------------------------
 	3. TYPOGRAPHY
 	   Headings, and paragraphs. Font-size and line-height adjust 
@@ -206,6 +209,7 @@ h3 {
   margin-bottom: 12px;
   font-weight: normal;
   line-height: 1.3em;
+  margin-top: 1em;
 }
 p > a {
   text-decoration: underline;
@@ -263,143 +267,6 @@ p:last-child {
 		4. SITE
 			4.1 HEADER
 -------------------------------------------------------------- */
-header {
-  padding: 30px 0;
-}
-header h1.logo {
-  width: 30%;
-  float: left;
-}
-header input {
-  position: absolute;
-  top: 0;
-  display: none;
-  z-index: 999999;
-}
-header span.mobile-menu {
-  display: none;
-}
-@media only screen and (max-width: 640px) {
-  header span.mobile-menu {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 22px;
-  }
-}
-header span.mobile-close {
-  display: none;
-}
-@media only screen and (max-width: 640px) {
-  header span.mobile-close {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-  }
-}
-header nav {
-  float: right;
-  width: 70%;
-  padding-top: 58px;
-}
-@media only screen and (max-width: 640px) {
-  header nav {
-    display: none;
-  }
-  header nav.nav-open {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
-    background: #f5f5f5;
-    height: 1800px;
-    padding: 50px 30px 0 20px;
-  }
-  header nav.nav-open ul li ul li a {
-    color: #333333 !important;
-  }
-}
-header nav ul li {
-  cursor: pointer;
-  -webkit-transition: all .1s;
-  -moz-transition: all .1s;
-  -ms-transition: all .1s;
-  -o-transition: all .1s;
-  transition: all .1s;
-}
-header nav ul li:last-child {
-  padding-right: 0;
-}
-@media only screen and (max-width: 640px) {
-  header nav ul li:last-child {
-    display: none;
-  }
-}
-header nav ul li a,
-header nav ul li a:visited {
-  color: #333333;
-}
-header nav ul li:hover,
-header nav ul li.menu-item-has-children:hover,
-header nav ul li.page_item_has_children:hover {
-  background: #4d6ad0;
-  color: #ffffff;
-}
-header nav ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 32px;
-  left: -5px;
-  width: 200px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity .1s;
-  -moz-transition: opacity .1s;
-  -ms-transition: opacity .1s;
-  -o-transition: opacity .1s;
-  -transition: opacity .1s;
-}
-header nav ul li ul li {
-  background: #4d6ad0;
-  display: block;
-  color: #fff;
-  padding: 10px 15px;
-  z-index: 999;
-}
-header nav ul li ul li a,
-header nav ul li ul li a:visited {
-  color: #ffffff;
-}
-header nav ul li ul li:hover {
-  background: #263e91;
-}
-header nav ul li ul li:hover a {
-  color: #ffffff;
-}
-header nav ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-header nav ul {
-  display: block;
-  float: right;
-}
-header nav ul li {
-  display: inline-block;
-  margin-left: 5px;
-  padding: 5px 10px;
-  position: relative;
-  font-size: 90%;
-}
 header nav ul li.menu-item-has-children > a,
 header nav ul li.page_item_has_children > a {
   padding-right: 15px;
@@ -423,6 +290,157 @@ header nav ul li.page_item_has_children > a:after {
   header nav ul li.page_item_has_children > a:after {
     top: 20px;
   }
+}
+header nav ul li.menu-item-has-children:hover {
+  background: #4d6ad0;
+  color: #ffffff;
+}
+header nav ul li.menu-item-has-children:hover a {
+  color: #ffffff !important;
+}
+header {
+  padding: 30px 0;
+}
+header h1.logo {
+  width: 170px;
+  float: left;
+  margin-top: 16px;
+}
+header input {
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 999999;
+}
+header span.mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  header span.mobile-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+}
+header span.mobile-close {
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  header span.mobile-close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+header nav {
+  float: right;
+  width: 70%;
+  padding-top: 58px;
+}
+@media only screen and (max-width: 640px) {
+  header nav.nav-open {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: #f5f5f5;
+    height: 1800px;
+    padding: 50px 30px 0 20px;
+  }
+  header nav.nav-open ul li ul li a {
+    color: #333333 !important;
+  }
+  header nav {
+    display: none;
+  }
+}
+header nav ul li {
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  -ms-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+  color: #333333;
+}
+header nav ul li a {
+  color: #333333 !important;
+}
+header nav ul li:hover {
+  color: #4d6ad0 !important;
+}
+header nav ul li:last-child {
+  padding-right: 0;
+}
+@media only screen and (max-width: 640px) {
+  header nav ul li:last-child {
+    display: none;
+  }
+}
+header nav ul li a {
+  color: #333333;
+}
+header nav ul li.dropdown:hover {
+  background: #4d6ad0;
+  color: #ffffff;
+}
+header nav ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 200px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity .1s;
+  -moz-transition: opacity .1s;
+  -ms-transition: opacity .1s;
+  -o-transition: opacity .1s;
+  -transition: opacity .1s;
+}
+header nav ul li ul li {
+  background: #4d6ad0;
+  display: block;
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 999;
+}
+header nav ul li ul li a {
+  color: #ffffff !important;
+}
+header nav ul li ul li:hover {
+  background: #263e91;
+}
+header nav ul li ul li:hover a {
+  color: #ffffff !important;
+}
+header nav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+header nav ul {
+  display: block;
+  float: right;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 5px 10px;
+  position: relative;
+  font-size: 90%;
+}
+header nav ul li i {
+  margin-left: 5px;
 }
 header nav ul li.search i {
   z-index: 9999;
@@ -467,6 +485,9 @@ header .top-menu ul li i {
   margin-left: 5px;
 }
 @media only screen and (max-width: 640px) {
+  header nav ul li.menu-item-has-children:hover a {
+    color: #333333 !important;
+  }
   .top-menu {
     visibility: hidden;
   }
@@ -488,11 +509,14 @@ header .top-menu ul li i {
     border-bottom: 1px solid #999;
   }
   header nav ul li:hover,
-  header nav ul li.menu-item-has-children:hover,
-  header nav ul li.page_item_has_children:hover {
-    background: #f5f5f5;
-    color: black;
+  header nav ul li.dropdown:hover {
+    background: #f5f5f5 !important;
+    color: black !important;
     border-bottom: 1px solid #333333;
+  }
+  header nav ul li:hover a,
+  header nav ul li.dropdown:hover a {
+    color: #333333 !important;
   }
   header nav ul li ul {
     margin-left: 5px;
@@ -507,7 +531,7 @@ header .top-menu ul li i {
   }
   header nav ul li ul li {
     display: block;
-    color: #333333;
+    color: #333333 !important;
     margin: 0;
     width: 50%;
     float: left;
@@ -546,15 +570,25 @@ i {
     display: none;
   }
 }
+@media only screen and (max-width: 640px) {
+  .hero {
+    margin-top: -10px;
+  }
+}
 .hero .hero-headline {
   position: absolute;
   left: 20px;
 }
 .hero .hero-headline h1 {
-  padding-top: 40px;
+  padding-top: 30px;
   line-height: 1.1;
   color: #263e91;
   font-weight: bolder;
+}
+@media only screen and (max-width: 640px) {
+  .hero .hero-headline h1 {
+    padding-top: 40px;
+  }
 }
 .hero .hero-headline p {
   color: #333333;
@@ -572,14 +606,18 @@ i {
 }
 .hero .hero-headline a.border {
   margin-left: 10px;
+  color: #333333;
 }
 @media only screen and (max-width: 640px) {
   .hero .hero-headline a.border {
     color: #333333;
-    margin-left: 0;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 1023px) {
+  .hero .hero-headline p {
+    margin: 20px auto 10px auto;
+    max-width: 70%;
+  }
   .hero .hero-headline {
     position: relative;
     padding: 1px 20px 60px 20px;
@@ -587,21 +625,17 @@ i {
     left: 0;
     text-align: center;
   }
-  .hero .hero-headline p {
-    margin: 20px auto 10px auto;
-    max-width: 70%;
-  }
 }
 @media only screen and (max-width: 640px) {
+  .hero .hero-headline p {
+    max-width: 100%;
+  }
   .hero .hero-headline {
     position: relative;
     padding: 0px 20px 60px 20px;
     width: auto;
-    text-align: left;
+    text-align: center;
     left: 0;
-  }
-  .hero .hero-headline p {
-    max-width: 100%;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -652,6 +686,9 @@ i {
 .nyheter {
   height: 520px;
 }
+.nyheter h3 {
+  margin-top: 0;
+}
 .nyheter p i {
   font-size: 70%;
 }
@@ -682,6 +719,7 @@ i {
 }
 .nyheter .nyhet h3 {
   color: #333333;
+  margin-top: 0;
 }
 .nyheter a:hover h3 {
   color: #263e91;
@@ -722,6 +760,9 @@ i {
   height: 520px;
   position: relative;
 }
+.arkiv h3 {
+  margin-top: 0;
+}
 .arkiv ul {
   padding-left: 5px;
 }
@@ -745,6 +786,9 @@ i {
 }
 .meta {
   height: 270px;
+}
+.meta h3 {
+  margin-top: 0;
 }
 .meta small {
   margin-top: -10px;
@@ -785,6 +829,7 @@ span.kategori {
 }
 .page-layout .page-header h3 {
   font-size: 1em;
+  margin-top: 0;
 }
 @media only screen and (max-width: 640px) {
   .page-layout .page-header h3 {
@@ -945,14 +990,33 @@ input {
 /* --------------------------------------------------------------
 			UNDERSIDA — posts
 -------------------------------------------------------------- */
+@media only screen and (max-width: 640px) {
+  .nyhet-thumb {
+    display: none !important;
+  }
+}
 .posts input {
   margin-top: 10px;
 }
 .posts ul li {
   list-style: none;
-  margin-bottom: 30px;
   border-bottom: 1px solid #dddddd;
   padding-bottom: 30px;
+}
+.posts ul li img {
+  top: -5px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: absolute;
+}
+@media only screen and (max-width: 640px), screen and (min-width: 640px) and (max-width: 1023px) {
+  .posts ul li img {
+    display: none;
+  }
 }
 .posts ul li a {
   color: #333333;
@@ -969,6 +1033,26 @@ input {
   margin-top: 10px;
 }
 /* --------------------------------------------------------------
+			UNDERSIDA — styrelsen
+-------------------------------------------------------------- */
+.styrelse .sidenote {
+  margin-top: 40px;
+}
+.styrelse .box-6 {
+  text-align: center;
+}
+.styrelse .box-6 img {
+  height: 300px;
+  width: auto;
+  margin: 0 auto;
+}
+.styrelse .box-6 p {
+  margin-top: 1em;
+}
+.styrelse .box-6 p small {
+  display: block;
+}
+/* --------------------------------------------------------------
 			4.4 FOOTER
 -------------------------------------------------------------- */
 footer[role=contentinfo] {
@@ -979,9 +1063,21 @@ footer[role=contentinfo] {
 footer[role=contentinfo] input {
   border: none;
   color: #333333;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 footer[role=contentinfo] ul li {
   list-style: none;
+}
+footer[role=contentinfo] ul li a {
+  color: #ffffff;
+}
+footer[role=contentinfo] ul li a:hover {
+  color: #263e91;
 }
 footer[role=contentinfo] p.copyright {
   display: block;
@@ -1288,15 +1384,12 @@ button:hover {
   background: #4d6ad0;
   color: #ffffff;
 }
-.blue:visited {
-  color: #ffffff;
-}
 .border {
   border: 1px solid #333333;
   color: #333333;
 }
 .border:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   border: 1px solid #263e91;
 }
 .main {

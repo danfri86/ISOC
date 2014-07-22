@@ -10,11 +10,20 @@ footer[role=contentinfo] {
 	input {
 		border: none;
 		color: @black;
+		.border-radius(0);
 	}
 
 	ul {
 		li {
 			list-style: none;
+
+			a {
+				color: @white;
+
+				&:hover {
+					color: @main-dark;
+				}
+			}
 		}
 	}
 
