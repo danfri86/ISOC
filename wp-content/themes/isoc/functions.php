@@ -3,6 +3,7 @@
 //require_once('custom-post-types/index.php');
 require_once('theme-options/index.php');
 require_once('cpt-metaboxes/index.php');
+require_once('incl/widgets.php');
 
 
 
@@ -138,9 +139,9 @@ function isoc_sidebars() {
 		'name'          => 'Sidebar',
 		'id'            => 'sidebar-1',
 		'description'   => 'Visas på alla sidor',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="box-10 sidenote tablet-12 widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="widget-title">',
+		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
 	) );
 }

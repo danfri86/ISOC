@@ -31,17 +31,14 @@
 			<?php endwhile; ?>
 
 			<div class="box-4 np">
-					<div class="box-10 sidenote tablet-12">
-						<h4>Dela</h4>
-						<p>Dela den här härliga artikeln på sociala medier är du gullig.</p>
-					</div>
+				<?php get_sidebar(); ?>
 
-					<!-- om bilaga finns -->
-					<div class="box-10 sidenote tablet-12">
-						<h4>Bilaga</h4>
-						<a href="!#" class="btn blue bilaga"><i class="fa fa-paperclip"></i> Filnamn.pdf <small>37kb</small></a>
-					</div>
+				<!-- om bilaga finns -->
+				<div class="box-10 sidenote tablet-12">
+					<h4>Bilaga</h4>
+					<a href="!#" class="btn blue bilaga"><i class="fa fa-paperclip"></i> Filnamn.pdf <small>37kb</small></a>
 				</div>
+			</div>
     </div>
   </div>
 
