@@ -11,7 +11,7 @@ Template Name: Nyheter
 	<div class="box-12">
 
 		<div class="page-header">
-			<h1>Nyheter</h1>
+			<h1>Arkiv</h1>
 		</div>
 
 		<div class="box-12 np">
