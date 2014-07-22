@@ -61,7 +61,7 @@ $options = get_option('isoc_options');
               );
 
               $attachments = get_posts( $args );
-              if ( $attachments ) {
+              if ( $attachments && wp_attachment_is_image($post->ID) ) {
                 echo '<div class="box-3">';
                   foreach ( $attachments as $attachment ) {
                     echo wp_get_attachment_image( $attachment->ID, 'thumbnail', false );
