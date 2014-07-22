@@ -10,6 +10,14 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/archive.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/archive.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/cpt-metaboxes\/custom-post-type-columns.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -396,6 +404,30 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/box.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/box.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/box.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/box.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/login.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/login.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/editor-style-rtl.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -420,6 +452,14 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/functions.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/functions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/Gruntfile.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -429,6 +469,14 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/header.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/header.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		},
 	"\/incl\/bli-medlem-form.php": {
 		"fileType": 8192,
@@ -706,6 +754,25 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/less\/partials\/_footer.less",
 		"outputAbbreviatedPath": "\/less\/css\/_footer.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/partials\/_header.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/partials\/_header.less",
+		"outputAbbreviatedPath": "\/less\/css\/_header.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
@@ -27375,6 +27442,14 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/node_modules\/load-grunt-tasks\/readme.md",
 		"outputAbbreviatedPath": "\/node_modules\/load-grunt-tasks\/readme.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-nyheter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-nyheter.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
 	"\/page.php": {
