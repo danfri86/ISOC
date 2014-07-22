@@ -121,16 +121,10 @@ $options = get_option('isoc_options');
       'order'           => 'DESC'
     );
 
-    if( wp_get_archives() ) {
-      // Om det finns inlägg i arkiver
-      echo '<ul>';
-        wp_get_archives( $args );
-        echo '<li><a href="'. get_bloginfo('url') .'/nyheter" class="btn blue">Äldre inlägg</a></li>';
-      echo '</ul>';
-    } else {
-      // Om arkivet är tomt
-      echo '<p>Arkivet är tomt</p>';
-    }
+    echo '<ul>';
+      wp_get_archives( $args );
+      echo '<li><a href="'. get_bloginfo('url') .'/nyheter" class="btn blue">Äldre inlägg</a></li>';
+    echo '</ul>';
     ?>
   </div>
 

@@ -33,7 +33,7 @@
 
 		<div class="box-4 float-r">
 			<h3 class="">Nyhetsbrev</h3><p>Snart kommer du här att kunna skriva upp din mail och få ta del av information från oss och internationella Internet Society.</p>
-			<input type="text" disabled placeholder="Tillfälligt ur funktion">
+			<input type="text" disabled placeholder="Kommer snart">
 		</div>
 
 		<div class="box-12">
