@@ -28,7 +28,7 @@
 					<?php the_content(); ?>
 				</div>
 
-			<?php endwhile; ?>
+		<?php endwhile; ?>
 
 			<div class="box-4 np">
 				<?php get_sidebar(); ?>

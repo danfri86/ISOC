@@ -19,20 +19,11 @@ Template Name: Nyheter
 
 				<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		    // WP_Query arguments
-		    $args = array (
-		      'post_type'   => 'post',
-		      'paged' => $paged
-		    );
 
-		    // The Query
-		    $nyhetsArkiv = new WP_Query( $args );
-
-		    // The Loop
-		    if ( $nyhetsArkiv->have_posts() ) {
-	    		echo '<ul>';
-		      while ( $nyhetsArkiv->have_posts() ) {
-		        $nyhetsArkiv->the_post(); ?>
+				if (have_posts()) : 
+					echo '<ul>';
+				while (have_posts()) : the_post();
+				?>
 
 		        <li class="box-12">
 
@@ -87,15 +78,13 @@ Template Name: Nyheter
 	            </div>
 
 						</li>
-					<?php } 
-				} else {
-	      // no posts found
-	    	}
+					<?php endwhile;
 
 	    	echo '</ul>';
 
-	    	// Restore original Post Data
-	    	wp_reset_postdata();
+	    	else :
+
+	    	endif;
 	    	?>
 
 	    	<div class="pagination">
