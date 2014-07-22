@@ -39,7 +39,7 @@ Template Name: Nyheter
 							<?php
 	            // Om det finns en utvald bild
 	            if ( has_post_thumbnail() ) {
-	              echo '<div class="box-3">';
+	              echo '<div class="box-3 nyhet-thumb">';
 	                the_post_thumbnail('thumbnail');
 	              echo '</div>';
 

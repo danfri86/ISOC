@@ -32,6 +32,12 @@ i {
 		}
 	}
 
+	@media @phone {
+		& {
+			margin-top: -10px;
+		}
+	}
+
 	.hero-headline {
 		position: absolute;
 		left: 20px;
@@ -167,6 +173,7 @@ i {
 
 .nyheter {
 	height: 520px;
+	h3 {margin-top: 0;}
 	p {
 		i {
 			font-size: 70%;
@@ -198,6 +205,7 @@ i {
 
 		h3 {
 			color: @black;
+			margin-top: 0;
 		}
 	}
 
@@ -252,6 +260,7 @@ i {
 }
 
 .arkiv {
+	h3 {margin-top: 0;}
 	height: 520px;
 	position: relative;
 	ul {
@@ -282,6 +291,7 @@ i {
 }
 
 .meta {
+	h3 {margin-top: 0;}
 	height: 270px;
 
 	small {
@@ -332,6 +342,7 @@ span.kategori {
 
 		h3 {
 			font-size: 1em;
+			margin-top: 0;
 
 			@media @phone {
 				& {
@@ -523,7 +534,11 @@ input {
 /* --------------------------------------------------------------
 			UNDERSIDA — posts
 -------------------------------------------------------------- */
-
+@media @phone {
+	.nyhet-thumb {
+		display: none !important;
+	}
+}
 
 .posts {
 
@@ -534,13 +549,19 @@ input {
 	ul {
 		li {
 			list-style: none;
-			margin-bottom: 30px;
 			border-bottom: 1px solid @silver;
 			padding-bottom: 30px;
 
 			img {
-				margin-top: -30px;
+				top: -5px;
 				.border-radius(100%);
+				position: absolute;
+
+				@media @phone, @tablet {
+					& {
+						display: none;
+					}
+				}
 			}
 
 			a {

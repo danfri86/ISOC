@@ -54,7 +54,7 @@
 
  			<div class="top-menu">
  				<ul>
- 					<li><a href="<?php bloginfo('url'); ?>/kontakt">Kontakt</a></li>
+ 					<li><a href="<?php bloginfo('url'); ?>/wp-admin">Medlemslogin</a></li>
  					<?php //<li><a href="!#">Medlemslogin</a></li> ?>
  					<?php //<li><a href="!#">Language <i class="fa fa-globe"></i></a></li> ?>
  				</ul>

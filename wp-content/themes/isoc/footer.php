@@ -4,11 +4,11 @@
   		<div class="box-4">
   			<h3 class="">Navigera</h3>
   			<ul>
-  				<li>Om ISOC-SE</li>
-					<li>Detta vill ISOC</li>
-					<li>Blogg</li>
-					<li>Bli medlem</li>
-					<li>Kontakt</li>
+  				<li><a href="<?php bloginfo('url'); ?>/om-isoc-se/">Om ISOC-SE</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/om-isoc-se/detta-vill-isoc-se/">Detta vill ISOC</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/nyheter/">Nyheter</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/bli-medlem/">Bli medlem</a></li>
+					<li><a href="<?php bloginfo('url'); ?>/kontakt/">Kontakt</a></li>
   			</ul>
   		</div>	    			    		
 
@@ -24,17 +24,16 @@
   		<div class="box-4">
   			<h3 class="">Sociala medier</h3>
   			<ul>
-  				<li>Twitter</li>
-  				<li>Facebook</li>
-  				<li>YouTube</li>
+  				<li><a target="_blank" href="https://www.facebook.com/InternetSociety">Facebook</a></li>
+  				<li><a target="_blank" href="https://twitter.com/internetsociety">Twitter</a></li>
+  				<li><a target="_blank" href="https://www.youtube.com/user/InternetSocietyVideo">YouTube</a></li>
   			</ul>
   		</div>
 		</div>
 
 		<div class="box-4 float-r">
-			<h3 class="">Nyhetsbrev</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua.</p>
-			<input type="text" placeholder="Din e-mail-adress">
+			<h3 class="">Nyhetsbrev</h3><p>Snart kommer du här att kunna skriva upp din mail och få ta del av information från oss och internationella Internet Society.</p>
+			<input type="text" disabled placeholder="Din e-mail-adress">
 		</div>
 
 		<div class="box-12">
