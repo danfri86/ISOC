@@ -13,11 +13,11 @@
   		</div>	    			    		
 
   		<div class="box-4">
-  			<h3 class="">Dokument</h3>
+  			<h3 class="">Stadgar</h3>
   			<ul>
-  				<li>Remisser</li>
-  				<li>Publikationer</li>
-  				<li>Stadgar</li>
+  				<li>ISOC-SE</li>
+  				<li>Äldre version</li>
+  				<li>InternetSociety.org</li>
   			</ul>
   		</div>
 
