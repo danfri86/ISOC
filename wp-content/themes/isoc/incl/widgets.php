@@ -49,18 +49,20 @@ class bilagor_widget extends WP_Widget
         $bilagor->the_post();
 
           $allaBilagor = get_post_meta($post->ID,'bilaga_re_',true);
-          foreach ($allaBilagor as $bilaga){
-              //print_r($bilaga['bilaga_fil']);
-              
-              echo '<a href="'. $bilaga['bilaga_fil']['url'] .'" target="_blank" class="btn blue bilaga"><i class="fa fa-paperclip"></i>';
-                echo get_the_title( $bilaga['bilaga_fil']['id'] );
+          if( $allaBilagor ) {
+            foreach ($allaBilagor as $bilaga){
+                //print_r($bilaga['bilaga_fil']);
+                
+                echo '<a href="'. $bilaga['bilaga_fil']['url'] .'" target="_blank" class="btn blue bilaga"><i class="fa fa-paperclip"></i>';
+                  echo get_the_title( $bilaga['bilaga_fil']['id'] );
 
-                // Hämta filändendelsen. Hela url'en som parameter. ['ext'] hämtar bara filändelsen
-                $filtyp = wp_check_filetype( $bilaga['bilaga_fil']['url'] );
-                echo '.'. $filtyp['ext'];
+                  // Hämta filändendelsen. Hela url'en som parameter. ['ext'] hämtar bara filändelsen
+                  $filtyp = wp_check_filetype( $bilaga['bilaga_fil']['url'] );
+                  echo '.'. $filtyp['ext'];
 
-                echo ' <small>'. floor( filesize( get_attached_file($bilaga['bilaga_fil']['id']) )/1000 ) .'kb</small>';
-              echo '</a>';
+                  echo ' <small>'. floor( filesize( get_attached_file($bilaga['bilaga_fil']['id']) )/1000 ) .'kb</small>';
+                echo '</a>';
+            }
           }
 
           // $bilaga = get_post_meta($post->ID,'image_field_id',true);
