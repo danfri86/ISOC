@@ -48,7 +48,7 @@ if( isset( $_POST['bli-medlem-submit'] ) && isset( $_POST['post_nonce_field'] ) 
 					}
 
 					if( !empty($formSuccess) ) {
-						echo $formSuccess;
+						echo '<div class="animated fadeIn formSuccess"> <i class="fa fa-check"></i> Anmälan är skickad!</div>';
 					}
 					?>
 

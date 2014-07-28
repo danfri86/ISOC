@@ -186,6 +186,14 @@ i {
 	.box();
 }
 
+.om-isoc {
+
+	a {
+		float: right;
+		margin-bottom: -2em;
+	}
+}
+
 .nyheter {
 	height: 520px;
 	h3 {margin-top: 0;}
@@ -475,12 +483,25 @@ input {
 	}
 }
 
+.formSuccess {
+	padding: 20px 40px 20px 20px;
+	background: @main;
+	color: @white;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
 .medlem-form {
 
 	form {
 		width: 100%;
 		position: relative;
 		float: left;
+	}
+
+	label {
+		font-size: 90%;
+		color: @gray;
 	}
 
 	textarea {

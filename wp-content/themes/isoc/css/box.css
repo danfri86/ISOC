@@ -303,7 +303,7 @@ header {
 header h1.logo {
   width: 170px;
   float: left;
-  margin-top: 16px;
+  margin-top: 22px;
 }
 header input {
   position: absolute;
@@ -694,6 +694,10 @@ i {
   padding: 20px 5px;
   position: relative;
 }
+.om-isoc a {
+  float: right;
+  margin-bottom: -2em;
+}
 .nyheter {
   height: 520px;
 }
@@ -946,10 +950,21 @@ input {
   -webkit-appearance: none;
   font-family: FontAwesome;
 }
+.formSuccess {
+  padding: 20px 40px 20px 20px;
+  background: #4d6ad0;
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: inline-block;
+}
 .medlem-form form {
   width: 100%;
   position: relative;
   float: left;
+}
+.medlem-form label {
+  font-size: 90%;
+  color: #aaaaaa;
 }
 .medlem-form textarea {
   resize: none;
@@ -1103,7 +1118,8 @@ footer[role=contentinfo] ul li {
 footer[role=contentinfo] ul li a {
   color: #ffffff;
 }
-footer[role=contentinfo] ul li a:hover {
+footer[role=contentinfo] ul li a:hover,
+footer[role=contentinfo] ul li a:active {
   color: #dddddd;
 }
 footer[role=contentinfo] p.copyright {

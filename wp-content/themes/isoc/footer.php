@@ -25,7 +25,7 @@
   			<h3 class="">Sociala medier</h3>
   			<ul>
   				<li><a target="_blank" href="https://www.facebook.com/InternetSociety">Facebook</a></li>
-  				<li><a target="_blank" href="https://twitter.com/internetsociety">Twitter</a></li>
+  				<li><a target="_blank" href="https://twitter.com/isocse">Twitter</a></li>
   				<li><a target="_blank" href="https://www.youtube.com/user/InternetSocietyVideo">YouTube</a></li>
   			</ul>
   		</div>

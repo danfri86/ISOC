@@ -1,12 +1,23 @@
 <div class="box-12 medlem-form tablet-12">
 	<form id="medlemFormular" action="<?php the_permalink(); ?>" method="post">
 		<div class="box-6 np">
-			<input type="name" name="fornamn" required placeholder="Förnamn*">
-			<input type="name" name="efternamn" required placeholder="Efternamn*">
-			<input type="name" name="adress" required placeholder="Gatuadress*">
-			<input type="name" name="postnummer" required placeholder="Postnummer*">
-			<input type="name" name="ort" required placeholder="Ort*">
-			<input type="name" name="email" required placeholder="E-mail*">
+			<label for="fornamn">Förnamn*</label>
+			<input type="name" name="fornamn" required placeholder="">
+
+			<label for="efternamn">Efternamn*</label>
+			<input type="name" name="efternamn" required placeholder="">
+
+			<label for="adress">Gatuadress*</label>
+			<input type="name" name="adress" required placeholder="">
+
+			<label for="postnummer">Postnummer*</label>
+			<input type="name" name="postnummer" required placeholder="">
+
+			<label for="ort">Ort*</label>
+			<input type="name" name="ort" required placeholder="">
+
+			<label for="email">E-mail*</label>
+			<input type="name" name="email" required placeholder="">
 
 			<div class="medlem-foretag">
   			<input type="name" name="foretag-namn" placeholder="Företagsnamn*">
@@ -17,7 +28,8 @@
 		</div>
 
 		<div class="box-6 np pl">
-			<textarea name="meddelande" rows="5" cols="30" placeholder="Ditt meddelande"></textarea>
+			<label for="meddelande">Ditt meddelande</label>
+			<textarea name="meddelande" rows="5" cols="30" placeholder=""></textarea>
 
 			<select name="medlemstyp" required>
 			  <option value="">Typ av medlemsskap &#xf107;</option>

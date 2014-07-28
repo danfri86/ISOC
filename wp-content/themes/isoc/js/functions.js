@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
 	
+	console.clear();
 	console.log("i love lamp");
 
 	var win   = $(window);
@@ -45,5 +46,9 @@ jQuery(document).ready(function($) {
 	// Toggla sökfält på framsidan
 	$('.search-toggle').on('click', function() {
 		$('#search').slideToggle();
+	});
+
+	$('.formSuccess').on('click', function() {
+		$('.formSuccess').fadeOut();
 	});
 });
