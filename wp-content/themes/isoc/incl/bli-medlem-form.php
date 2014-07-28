@@ -2,28 +2,28 @@
 	<form id="medlemFormular" action="<?php the_permalink(); ?>" method="post">
 		<div class="box-6 np">
 			<label for="fornamn">Förnamn*</label>
-			<input type="name" name="fornamn" required placeholder="">
+			<input type="text" name="fornamn" required placeholder="">
 
 			<label for="efternamn">Efternamn*</label>
-			<input type="name" name="efternamn" required placeholder="">
+			<input type="text" name="efternamn" required placeholder="">
 
 			<label for="adress">Gatuadress*</label>
-			<input type="name" name="adress" required placeholder="">
+			<input type="text" name="adress" required placeholder="">
 
 			<label for="postnummer">Postnummer*</label>
-			<input type="name" name="postnummer" required placeholder="">
+			<input type="number" name="postnummer" required placeholder="">
 
 			<label for="ort">Ort*</label>
-			<input type="name" name="ort" required placeholder="">
+			<input type="text" name="ort" required placeholder="">
 
 			<label for="email">E-mail*</label>
-			<input type="name" name="email" required placeholder="">
+			<input type="email" name="email" required placeholder="">
 
 			<div class="medlem-foretag">
-  			<input type="name" name="foretag-namn" placeholder="Företagsnamn*">
-    		<input type="name" name="foretag-adress" placeholder="Gatuadress*">
-    		<input type="name" name="foretag-postnummer" placeholder="Postnummer*">
-    		<input type="name" name="foretag-ort" placeholder="Ort*">
+  			<input type="text" name="foretag-namn" placeholder="Företagsnamn*">
+    		<input type="text" name="foretag-adress" placeholder="Gatuadress*">
+    		<input type="number" name="foretag-postnummer" placeholder="Postnummer*">
+    		<input type="text" name="foretag-ort" placeholder="Ort*">
     	</div>
 		</div>
 
