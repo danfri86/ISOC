@@ -958,6 +958,9 @@ input {
   margin-bottom: 20px;
   display: inline-block;
 }
+input {
+  height: auto !important;
+}
 .medlem-form form {
   width: 100%;
   position: relative;
@@ -976,7 +979,6 @@ input {
   width: 100%;
   padding: 12px 18px;
   font-size: 90%;
-  height: auto !important;
 }
 .medlem-form input {
   border: 1px solid #999;
