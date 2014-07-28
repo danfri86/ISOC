@@ -1023,8 +1023,10 @@ input {
 /* --------------------------------------------------------------
 			UNDERSIDA — nyhet singel
 -------------------------------------------------------------- */
-.nyhet p:first-child {
-  font-weight: bold;
+.nyhet {
+  /*p:first-child {
+		font-weight: bold;
+	}*/
 }
 .nyhet ul {
   padding-left: 20px;
