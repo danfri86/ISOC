@@ -11,7 +11,7 @@
 			<input type="text" name="adress" required placeholder="">
 
 			<label for="postnummer">Postnummer*</label>
-			<input type="number" name="postnummer" required placeholder="">
+			<input type="text" name="postnummer" required placeholder="">
 
 			<label for="ort">Ort*</label>
 			<input type="text" name="ort" required placeholder="">
@@ -22,7 +22,7 @@
 			<div class="medlem-foretag">
   			<input type="text" name="foretag-namn" placeholder="Företagsnamn*">
     		<input type="text" name="foretag-adress" placeholder="Gatuadress*">
-    		<input type="number" name="foretag-postnummer" placeholder="Postnummer*">
+    		<input type="text" name="foretag-postnummer" placeholder="Postnummer*">
     		<input type="text" name="foretag-ort" placeholder="Ort*">
     	</div>
 		</div>
