@@ -15,8 +15,8 @@
   		<div class="box-4">
   			<h3 class="">Stadgar</h3>
   			<ul>
-  				<li><a href="http://df-mac.local:5757/isoc/wp-content/uploads/2014/07/isoc-se_stadgar_20070426.pdf" target="_blank">ISOC-SE</a></li>
-  				<li><a href="http://df-mac.local:5757/isoc/wp-content/uploads/2014/07/stadgar_isoc-se_sv_antagna_2003-04-09.pdf" target="_blank">Äldre version</a></li>
+  				<li><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2014/07/isoc-se_stadgar_20070426.pdf" target="_blank">ISOC-SE</a></li>
+  				<li><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2014/07/stadgar_isoc-se_sv_antagna_2003-04-09.pdf" target="_blank">Äldre version</a></li>
   				<li><a href="http://www.internetsociety.org/who-we-are/governance-and-policies/amended-and-restated-laws-internet-society" target="_blank">InternetSociety.org</a></li>
   			</ul>
   		</div>
