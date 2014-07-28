@@ -422,7 +422,8 @@ header nav ul li ul li:hover {
 header nav ul li ul li:hover a {
   color: #ffffff !important;
 }
-header nav ul li:hover ul {
+header nav ul li:hover ul,
+header nav ul li a:focus + ul {
   display: block;
   opacity: 1;
   visibility: visible;
