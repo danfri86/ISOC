@@ -137,7 +137,7 @@ $options = get_option('isoc_options');
       <h3>Vad är ISOC-SE?</h3>
 
       <?php echo apply_filters('the_content', $options['framsida_info']); ?>
-      <a href="<?php get_bloginfo('url') ?>/om-isoc-se/" class="btn blue">Läs mer</a></li>
+      <a href="<?php get_bloginfo('url'); ?>/om-isoc-se/" class="btn blue">Läs mer</a></li>
     </div>
   </div>
 
