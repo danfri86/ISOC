@@ -1,7 +1,4 @@
 jQuery(document).ready(function($) {
-	
-	console.clear();
-	console.log("i love lamp");
 
 	var win   = $(window);
 	var doc   = $(document);
