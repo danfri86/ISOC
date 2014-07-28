@@ -26,33 +26,40 @@ class bilagor_widget extends WP_Widget
   function widget($args, $instance)
   {
     extract($args, EXTR_SKIP);
- 
-    
     
     global $post;
 
-    // WP_Query arguments
-    $args = array (
-      'p'   => $post->ID
-    );
+    if( is_single($post->ID) ) {
+      // WP_Query arguments
+      $args = array (
+        'p'   => $post->ID,
+      );
+    }
+
+    if( is_page($post->ID) ) {
+      // WP_Query arguments
+      $args = array (
+        'page_id' => $post->ID
+      );
+    }
 
     // The Query
-    $bilagor = new WP_Query( $args );
+    $inlaggSida = new WP_Query( $args );
 
     // The Loop
-    if ( $bilagor->have_posts() ) {
-      while ( $bilagor->have_posts() ) {
-        $bilagor->the_post();
+    if ( $inlaggSida->have_posts() ) {
+      while ( $inlaggSida->have_posts() ) {
+        $inlaggSida->the_post();
 
-          $allaBilagor = get_post_meta($post->ID,'bilaga_re_',true);
-          if( $allaBilagor ) {
+          $bilagor = get_post_meta($post->ID,'bilaga_re_',true);
+          if( $bilagor ) {
             echo $before_widget;
             $title = empty($instance['title']) ? '' : apply_filters('widget_title', $instance['title']);
          
             if (!empty($title))
               echo $before_title . $title . $after_title;
 
-            foreach ($allaBilagor as $bilaga){
+            foreach ($bilagor as $bilaga){
                 //print_r($bilaga['bilaga_fil']);
                 
                 echo '<a href="'. $bilaga['bilaga_fil']['url'] .'" target="_blank" class="btn blue bilaga"><i class="fa fa-paperclip"></i>';
@@ -66,11 +73,7 @@ class bilagor_widget extends WP_Widget
                 echo '</a>';
             }
             echo $after_widget;
-          }
-
-          // $bilaga = get_post_meta($post->ID,'image_field_id',true);
-          // echo '<img src="'.$bilaga['url'].'">';
-            
+          }            
         }
     } else {
       // no posts found
