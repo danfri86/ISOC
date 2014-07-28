@@ -782,6 +782,7 @@ i {
 }
 .arkiv ul li {
   list-style: none;
+  text-transform: capitalize;
 }
 .arkiv ul li:last-child {
   position: absolute;
