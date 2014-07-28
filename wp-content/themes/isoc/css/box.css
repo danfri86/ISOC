@@ -1104,7 +1104,7 @@ footer[role=contentinfo] ul li a {
   color: #ffffff;
 }
 footer[role=contentinfo] ul li a:hover {
-  color: #263e91;
+  color: #dddddd;
 }
 footer[role=contentinfo] p.copyright {
   display: block;

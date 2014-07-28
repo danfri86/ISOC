@@ -28,7 +28,7 @@
 
 	<header role="banner">
  		<div class="container">
- 			<h1 class="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/static/logotype.png" alt=""></a></h1>
+ 			<h1 class="logo"><a href="<?php bloginfo('url'); ?>"><img alt="ISOC-SE" src="<?php bloginfo('template_directory'); ?>/static/logotype.png" alt=""></a></h1>
 
  			<nav>
  				<span class="mobile-close btn border"><!--<i class="fa fa-times"></i>--> Stäng</span>
