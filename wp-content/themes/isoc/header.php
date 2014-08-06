@@ -28,7 +28,7 @@
 
 	<header role="banner">
  		<div class="container">
- 			<h1 class="logo"><a href="<?php bloginfo('url'); ?>"><img alt="ISOC-SE" title="ISOC-SE" src="<?php bloginfo('template_directory'); ?>/static/logo.png" alt=""></a></h1>
+ 			<h1 class="logo"><a href="<?php bloginfo('url'); ?>"><img alt="ISOC-SE" title="ISOC-SE" src="<?php bloginfo('template_directory'); ?>/static/logo-sweden.png" alt=""></a></h1>
 
  			<nav>
  				<span class="mobile-close btn border">Stäng</span>
@@ -47,13 +47,13 @@
 				); ?>
  			</nav>
 
- 			<div class="top-menu">
+ 			<!--<div class="top-menu">
  				<ul>
  					<li><a href="<?php bloginfo('url'); ?>/wp-admin">Medlemslogin</a></li>
  					<?php //<li><a href="!#">Medlemslogin</a></li> ?>
  					<?php //<li><a href="!#">Language <i class="fa fa-globe"></i></a></li> ?>
  				</ul>
- 			</div>
+ 			</div>-->
  			<span class="mobile-menu"><i class="fa fa-bars"></i> Meny</span>
  		</div>
  			<input id="search" type="text" placeholder="Sök">

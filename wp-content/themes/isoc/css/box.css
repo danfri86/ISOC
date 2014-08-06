@@ -299,7 +299,7 @@ header {
   padding: 30px 0;
 }
 header h1.logo {
-  width: 170px;
+  width: 290px;
   float: left;
   margin-top: 22px;
 }
@@ -493,7 +493,7 @@ header .top-menu ul li i {
     padding: 13px 0 3px 0;
   }
   header h1.logo {
-    width: 100px;
+    width: 180px;
   }
   header nav {
     width: 100%;
