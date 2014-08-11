@@ -830,6 +830,9 @@ span.kategori {
 .page-layout {
   background: #ffffff;
 }
+.page-layout img {
+  padding: 10px 15px;
+}
 .page-layout .page-header {
   padding: 30px 30px 20px 30px;
   background: #dddddd;
