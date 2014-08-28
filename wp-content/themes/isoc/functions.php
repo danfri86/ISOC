@@ -322,8 +322,8 @@ function paginationNyheter() {
       'format' => '',
       'total' => $nyheter->max_num_pages,
       'current' => $current,
-      'prev_text' => '»',
-      'next_text' => '«',
+      'prev_text' => '«',
+      'next_text' => '»',
       'type' => 'plain'
   );
 

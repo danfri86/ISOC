@@ -174,10 +174,15 @@ header {
 		  background: @main; 
 		  display: block; 
 		  color: #fff;
-		  padding: 10px 15px;
+		  
 		  z-index: 999;
 
-		  a{color: @white !important;}
+		  a {
+		  	display: block;
+		  	height: 100%;
+		  	color: @white !important;
+			  padding: 10px 15px;
+			}
 		}
 
 		ul li ul li:hover { background: @main-dark; a{color: @white !important;} }
