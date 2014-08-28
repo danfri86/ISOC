@@ -71,7 +71,11 @@ Template Name: Nyheter
 	                // Början på titel+text
 	              echo '<div class="box-9">';
 	              } else {
-	                echo '<div class="box-12">';
+	              	echo '<div class="box-3 nyhet-thumb">';
+	                  echo '<img src="'. get_bloginfo('template_directory') .'/static/logo-planet.png" width="140" height="140" alt="ISOC" />';
+	                echo '</div>';
+
+	                echo '<div class="box-9">';
 	              }
 	            }
 	            ?>

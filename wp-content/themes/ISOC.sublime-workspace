@@ -463,6 +463,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "isoc/functions.php",
+			"settings":
+			{
+				"buffer_size": 11847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "isoc/incl/bli-medlem-form.php",
+			"settings":
+			{
+				"buffer_size": 1897,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -528,6 +544,22 @@
 	},
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/less/partials/_site.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/incl/bli-medlem-form.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/single.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/fading_exits/fadeOutRight.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/modernizr/feature-detects/forms-fileinput.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/less/partials/_header.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/cpt-metaboxes/meta-boxes.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-less/node_modules/less/test/css/extend-nest.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/cpt-metaboxes/meta-boxar/lang/en_US.mo",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page-nyheter.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-less/node_modules/less/test/css/mixins-named-args.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/version.js",
 		"/Users/daniel/Downloads/danielfriberg_s.sql",
 		"/Applications/XAMPP/xamppfiles/var/mysql/lesjofors/db.opt",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/incl/widgets.php",
@@ -537,18 +569,12 @@
 		"/Users/daniel/Library/Caches/Cleanup At Startup/Transmit/4781F316-C2CA-4719-8081-06F8EA25D638/.htaccess",
 		"/Users/daniel/Library/Caches/Cleanup At Startup/Transmit/FB57E68D-B811-48ED-8C6C-7A9ACD4EBD23/.htaccess",
 		"/Users/daniel/Library/Caches/Cleanup At Startup/Transmit/D81D9014-A172-4D91-96E4-1A1AB12178E7/.htaccess",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/index.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/footer.php",
 		"/Users/daniel/Downloads/isoc.sql",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page-nyheter.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/functions.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/css/login.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/lesjofors/functions.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-less/docs/less-options.md",
 		"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/lesjofors/dist/css/login.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/header.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/incl/bli-medlem-form.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/modernizr/feature-detects/battery-level.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/less/_box.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/archive.php",
@@ -556,7 +582,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-config.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/swimrun/wp-content/themes/karlstadevents/functions.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/swimrun/wp-content/themes/karlstadevents/archive.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/single.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/daniel/wp-content/themes/danielv18/archive.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/sidebar.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/Gruntfile-execArgv-child.js",
@@ -564,11 +589,9 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-clean/AUTHORS",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/404.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/modernizr/feature-detects/web-intents.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/cpt-metaboxes/meta-boxes.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/boltic/wp-content/plugins/widget_randomPlayer.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/incl/styrelse.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc.dev/styrelse.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/less/partials/_site.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/jquery/src/manipulation.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/modernizr/media/Modernizr 2 Logo.ai",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/modernizr/feature-detects/quota-management-api.js",
@@ -617,7 +640,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/meta-boxar/js/meta-box.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/meta-boxar/css/meta-box.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/modernizr/modernizr.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/less/partials/_header.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/jquery/src/ajax/script.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/pt-online/wp-content/themes/ptonline-pt/functions.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/newhem/wp-content/themes/newhem6/functions.php",
@@ -649,13 +671,7 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc.dev/single-post.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/jquery/src/core/var/rsingleTag.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/attention_seekers/swing.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/sliders/slideInDown.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/.htaccess",
-		"/Applications/XAMPP/xamppfiles/htdocs/daniel/wp-content/themes/danielv17/functions.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc.dev/isoc.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/lesjofors/less/modules/submenu.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/lesjofors/less/vendor/bootstrap/scaffolding.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/lesjofors/page.php"
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/sliders/slideInDown.css"
 	],
 	"find":
 	{
@@ -675,6 +691,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"number",
+			"\"nam",
+			"name",
 			"`",
 			"http://danielfriberg.se/lesjofors",
 			"$post->ID",
@@ -799,10 +818,7 @@
 			"clearMenus",
 			"li",
 			"navbar-padding-horizontal",
-			"chevron",
-			"h4",
-			"collapseOne",
-			"ho' => 1,"
+			"chevron"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -833,8 +849,68 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "isoc/functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "isoc/incl/bli-medlem-form.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -885,36 +961,44 @@
 		"selected_items":
 		[
 			[
-				"wid",
-				"incl/widgets.php"
-			],
-			[
-				"foo",
-				"footer.php"
-			],
-			[
-				"inde",
-				"index.php"
-			],
-			[
-				"login",
-				"css/login.css"
+				"bli",
+				"incl/bli-medlem-form.php"
 			],
 			[
 				"fun",
 				"functions.php"
 			],
 			[
-				"hea",
-				"header.php"
+				"site",
+				"less/partials/_site.less"
 			],
 			[
 				"page",
 				"page.php"
 			],
 			[
-				"bli",
-				"incl/bli-medlem-form.php"
+				"foo",
+				"footer.php"
+			],
+			[
+				"head",
+				"less/partials/_header.less"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"hea",
+				"header.php"
+			],
+			[
+				"wid",
+				"incl/widgets.php"
+			],
+			[
+				"login",
+				"css/login.css"
 			],
 			[
 				"sin",
@@ -999,10 +1083,6 @@
 			[
 				"single",
 				"single.php"
-			],
-			[
-				"head",
-				"less/partials/_header.less"
 			],
 			[
 				"nyh",
@@ -1391,10 +1471,6 @@
 			[
 				"form",
 				"sass/forms.scss"
-			],
-			[
-				"styl",
-				"sass/style.scss"
 			]
 		],
 		"width": 0.0
@@ -1405,16 +1481,16 @@
 		"selected_items":
 		[
 			[
-				"les",
-				"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/Lesjöfors.sublime-project"
+				"new",
+				"/Applications/XAMPP/xamppfiles/htdocs/newhem/wp-content/themes/Newhem6.sublime-project"
 			],
 			[
 				"dani",
 				"/Applications/XAMPP/xamppfiles/htdocs/daniel/wp-content/themes/danielfriberg.sublime-project"
 			],
 			[
-				"new",
-				"/Applications/XAMPP/xamppfiles/htdocs/newhem/wp-content/themes/Newhem6.sublime-project"
+				"les",
+				"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/Lesjöfors.sublime-project"
 			],
 			[
 				"newh",
