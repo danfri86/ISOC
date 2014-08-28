@@ -464,18 +464,10 @@
 	"buffers":
 	[
 		{
-			"file": "isoc/functions.php",
+			"file": "isoc/less/partials/_header.less",
 			"settings":
 			{
-				"buffer_size": 11847,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "isoc/incl/bli-medlem-form.php",
-			"settings":
-			{
-				"buffer_size": 1897,
+				"buffer_size": 5324,
 				"line_ending": "Unix"
 			}
 		}
@@ -544,21 +536,23 @@
 	},
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page-nyheter.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-less/node_modules/less/test/css/mixins-named-args.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/index.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/less/partials/_site.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/incl/bli-medlem-form.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/functions.php",
+		"/Users/daniel/Library/Caches/Cleanup At Startup/Transmit/6610088D-89E0-415E-B030-63DE16F7CF58/functions.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/footer.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/single.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/fading_exits/fadeOutRight.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/modernizr/feature-detects/forms-fileinput.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/index.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/less/partials/_header.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/header.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/cpt-metaboxes/meta-boxes.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-less/node_modules/less/test/css/extend-nest.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/cpt-metaboxes/meta-boxar/lang/en_US.mo",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/page-nyheter.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-less/node_modules/less/test/css/mixins-named-args.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/version.js",
 		"/Users/daniel/Downloads/danielfriberg_s.sql",
 		"/Applications/XAMPP/xamppfiles/var/mysql/lesjofors/db.opt",
@@ -570,7 +564,6 @@
 		"/Users/daniel/Library/Caches/Cleanup At Startup/Transmit/FB57E68D-B811-48ED-8C6C-7A9ACD4EBD23/.htaccess",
 		"/Users/daniel/Library/Caches/Cleanup At Startup/Transmit/D81D9014-A172-4D91-96E4-1A1AB12178E7/.htaccess",
 		"/Users/daniel/Downloads/isoc.sql",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/functions.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/css/login.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/lesjofors/functions.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/node_modules/grunt-contrib-less/docs/less-options.md",
@@ -670,8 +663,7 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/lesjofors/style.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc.dev/single-post.html",
 		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/jquery/src/core/var/rsingleTag.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/attention_seekers/swing.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/sliders/slideInDown.css"
+		"/Applications/XAMPP/xamppfiles/htdocs/isoc/wp-content/themes/isoc/libs/animate.css/source/attention_seekers/swing.css"
 	],
 	"find":
 	{
@@ -849,63 +841,33 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "isoc/functions.php",
+					"file": "isoc/less/partials/_header.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11847,
+						"buffer_size": 5324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2916,
+								2916
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 105.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "isoc/incl/bli-medlem-form.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1897,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								576,
-								576
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2385.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -961,16 +923,28 @@
 		"selected_items":
 		[
 			[
-				"bli",
-				"incl/bli-medlem-form.php"
+				"head",
+				"less/partials/_header.less"
 			],
 			[
 				"fun",
 				"functions.php"
 			],
 			[
+				"nyhe",
+				"page-nyheter.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
 				"site",
 				"less/partials/_site.less"
+			],
+			[
+				"bli",
+				"incl/bli-medlem-form.php"
 			],
 			[
 				"page",
@@ -979,14 +953,6 @@
 			[
 				"foo",
 				"footer.php"
-			],
-			[
-				"head",
-				"less/partials/_header.less"
-			],
-			[
-				"inde",
-				"index.php"
 			],
 			[
 				"hea",
@@ -1233,10 +1199,6 @@
 				"less/base/mixins.less"
 			],
 			[
-				"nyhe",
-				"less/modules/nyheter-start.less"
-			],
-			[
 				"resp",
 				"less/vendor/bootstrap/responsive-utilities.less"
 			],
@@ -1480,6 +1442,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"le",
+				"/Applications/XAMPP/xamppfiles/htdocs/lesjofors/wp-content/themes/Lesjöfors.sublime-project"
+			],
 			[
 				"new",
 				"/Applications/XAMPP/xamppfiles/htdocs/newhem/wp-content/themes/Newhem6.sublime-project"

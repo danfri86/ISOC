@@ -31,20 +31,14 @@ function isoc_mail_from_name( $original_email_from ) {
 
 
 
-// SMTP mail inställningar för localhost
-// Ta bort på live site
-add_action('phpmailer_init','send_smtp_email');
-function send_smtp_email( $phpmailer ) {
-  $phpmailer->isSMTP(); 
-  $phpmailer->Host = "smtp.gmail.com"; 
-  $phpmailer->SMTPAuth = true; 
-  $phpmailer->Port = "587"; 
-  $phpmailer->Username = "dfriberg86@gmail.com"; 
-  $phpmailer->Password = "bontskates"; 
-  $phpmailer->SMTPSecure = "tls"; 
-  //$phpmailer->From = "dfriberg86@gmail.com";
-  //$phpmailer->FromName = "PT-online";
-}
+
+
+
+// get the the role object
+$role_object = get_role( 'editor' );
+
+// add $cap capability to this role object
+$role_object->add_cap( 'edit_theme_options' );
 
 
 
